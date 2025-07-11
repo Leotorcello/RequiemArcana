@@ -73,7 +73,7 @@
     }
 
     async function getCartaDelDia() {
-      const res = await fetch('requiem_arcana_full_data.json');
+      const res = await fetch('requiem_arcana_full_data_bi.json');
       const data = await res.json();
       const hoy = new Date().toISOString().split('T')[0];
       const hash = [...hoy].reduce((a,c) => a + c.charCodeAt(0), 0);
@@ -85,7 +85,7 @@
       getCartaDelDia().then(carta => {
         const idioma = document.getElementById("idioma").value;
         document.getElementById("tituloCarta").innerText = idioma === "es" ? carta.Carta : carta.Name_EN;
-        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
+        document.getElementById("mensaje").innerText = idioma === "es" ? carta["Mensaje del día"] : carta.Mensaje_en;
         const videoID = extraerID(carta.Animation_URL);
         const videoURL = `https://drive.google.com/uc?id=${videoID}`;
         document.getElementById("animacion").src = videoURL;
