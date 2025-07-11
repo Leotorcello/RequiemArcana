@@ -18,10 +18,12 @@
       display: none;
       animation: fadeIn 2s ease-in-out forwards;
     }
-    video {
+    iframe {
       width: 300px;
+      height: 500px;
       max-width: 90vw;
       border-radius: 20px;
+      border: none;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
     }
     @keyframes fadeIn {
@@ -62,7 +64,7 @@
   <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
     <h2 id="tituloCarta"></h2>
-    <video id="animacion" autoplay loop muted playsinline></video>
+    <iframe id="animacion" allowfullscreen></iframe>
     <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
   </div>
 
@@ -87,8 +89,8 @@
         document.getElementById("tituloCarta").innerText = idioma === "es" ? carta.Carta : carta.Name_EN;
         document.getElementById("mensaje").innerText = idioma === "es" ? carta["Mensaje del día"] : carta.Mensaje_en;
         const videoID = extraerID(carta.Animation_URL);
-        const videoURL = `https://drive.google.com/uc?id=${videoID}`;
-        document.getElementById("animacion").src = videoURL;
+        const embedURL = `https://drive.google.com/file/d/${videoID}/preview`;
+        document.getElementById("animacion").src = embedURL;
         document.getElementById("card").style.display = "block";
       });
     }
