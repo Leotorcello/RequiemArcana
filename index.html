@@ -3,10 +3,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Requiem Arcana - Carta del Día</title>
+  <title>Requiem Arcana - Daily Card</title>
   <style>
     body {
-      background-color: #000;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
@@ -49,18 +50,18 @@
   </style>
 </head>
 <body>
-  <h1>Requiem Arcana - Carta del Día</h1>
+  <h1 id="tituloPrincipal">Requiem Arcana - Carta del Día</h1>
   <p id="fecha"></p>
   <div>
     <label for="idioma">🌐 Elegí tu idioma / Choose your language:</label>
-    <select id="idioma">
+    <select id="idioma" onchange="actualizarTexto()">
       <option value="es">Español</option>
       <option value="en">English</option>
     </select>
   </div>
   <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
-    <h2 id="titulo"></h2>
+    <h2 id="tituloCarta"></h2>
     <video id="animacion" autoplay loop muted playsinline></video>
     <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
   </div>
@@ -83,21 +84,28 @@
       document.querySelector("button").style.display = "none";
       getCartaDelDia().then(carta => {
         const idioma = document.getElementById("idioma").value;
-        const titulo = idioma === "es" ? carta.Carta : carta.Name_EN;
-        const mensaje = carta["Mensaje del día"];
+        document.getElementById("tituloCarta").innerText = idioma === "es" ? carta.Carta : carta.Name_EN;
+        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
         const videoID = extraerID(carta.Animation_URL);
         const videoURL = `https://drive.google.com/uc?id=${videoID}`;
-        document.getElementById("titulo").innerText = titulo;
-        document.getElementById("mensaje").innerText = mensaje;
         document.getElementById("animacion").src = videoURL;
         document.getElementById("card").style.display = "block";
       });
     }
 
-    document.getElementById("fecha").innerText =
-      "Tu carta para hoy, " + new Date().toLocaleDateString("es-AR", {
-        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-      });
+    function actualizarTexto() {
+      const idioma = document.getElementById("idioma").value;
+      const fecha = new Date();
+      if (idioma === "es") {
+        document.getElementById("tituloPrincipal").innerText = "Requiem Arcana - Carta del Día";
+        document.getElementById("fecha").innerText = "Tu carta para hoy, " + fecha.toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
+      } else {
+        document.getElementById("tituloPrincipal").innerText = "Requiem Arcana - Daily Card";
+        document.getElementById("fecha").innerText = "Your card for today, " + fecha.toLocaleDateString("en-US", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
+      }
+    }
+
+    window.onload = actualizarTexto;
   </script>
 </body>
 </html>
