@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Requiem Arcana - Carta del Día</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    video, img {
+      width: 300px;
+      max-width: 90vw;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Carta del Día - Requiem Arcana</h1>
+  <p id="fecha"></p>
+  <button onclick="revelarCarta()">🔮 REVELAR</button>
+  <div class="card" id="card">
+    <h2 id="titulo"></h2>
+    <video id="animacion" autoplay loop muted playsinline></video>
+    <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
+  </div>
+
+  <script>
+    async function getCartaDelDia() {
+      const res = await fetch('requiem_arcana_full_data.json');
+      const data = await res.json();
+      const hoy = new Date().toISOString().split('T')[0];
+      const hash = [...hoy].reduce((a,c) => a + c.charCodeAt(0), 0);
+      return data[hash % data.length];
+    }
+
+    function revelarCarta() {
+      document.querySelector("button").style.display = "none";
+      getCartaDelDia().then(carta => {
+        document.getElementById("titulo").innerText = carta.Carta + " / " + carta.Name_EN;
+        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
+        document.getElementById("animacion").src = carta.Animation_URL.replace("/view?usp=sharing", "/preview");
+        document.getElementById("card").style.display = "block";
+      });
+    }
+
+    document.getElementById("fecha").innerText =
+      "Tu carta para hoy, " + new Date().toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
+  </script>
+</body>
+</html>
