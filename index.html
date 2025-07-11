@@ -17,7 +17,7 @@
       display: none;
       animation: fadeIn 2s ease-in-out forwards;
     }
-    video, img {
+    video {
       width: 300px;
       max-width: 90vw;
       border-radius: 20px;
@@ -40,11 +40,24 @@
     button:hover {
       background: #666;
     }
+    select {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
-  <h1>Carta del Día - Requiem Arcana</h1>
+  <h1>Requiem Arcana - Carta del Día</h1>
   <p id="fecha"></p>
+  <div>
+    <label for="idioma">🌐 Elegí tu idioma / Choose your language:</label>
+    <select id="idioma">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+  </div>
   <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
     <h2 id="titulo"></h2>
@@ -53,6 +66,11 @@
   </div>
 
   <script>
+    function extraerID(url) {
+      const match = url.match(/\/d\/([\w-]+)\/view/);
+      return match ? match[1] : "";
+    }
+
     async function getCartaDelDia() {
       const res = await fetch('requiem_arcana_full_data.json');
       const data = await res.json();
@@ -64,15 +82,22 @@
     function revelarCarta() {
       document.querySelector("button").style.display = "none";
       getCartaDelDia().then(carta => {
-        document.getElementById("titulo").innerText = carta.Carta + " / " + carta.Name_EN;
-        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
-        document.getElementById("animacion").src = carta.Animation_URL.replace("/view?usp=sharing", "/preview");
+        const idioma = document.getElementById("idioma").value;
+        const titulo = idioma === "es" ? carta.Carta : carta.Name_EN;
+        const mensaje = carta["Mensaje del día"];
+        const videoID = extraerID(carta.Animation_URL);
+        const videoURL = `https://drive.google.com/uc?id=${videoID}`;
+        document.getElementById("titulo").innerText = titulo;
+        document.getElementById("mensaje").innerText = mensaje;
+        document.getElementById("animacion").src = videoURL;
         document.getElementById("card").style.display = "block";
       });
     }
 
     document.getElementById("fecha").innerText =
-      "Tu carta para hoy, " + new Date().toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
+      "Tu carta para hoy, " + new Date().toLocaleDateString("es-AR", {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+      });
   </script>
 </body>
 </html>
