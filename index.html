@@ -35,15 +35,33 @@
       overflow: hidden;
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      background-color: #000;
     }
     iframe {
       width: 100%;
       height: 100%;
       border: none;
     }
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #666;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      display: none;
+    }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
     }
     button {
       padding: 15px 30px;
@@ -72,7 +90,8 @@
   <div class="card" id="card">
     <h2 id="tituloCarta"></h2>
     <div class="video-container">
-      <iframe id="animacion" allow="autoplay"></iframe>
+      <div class="loader" id="loader"></div>
+      <iframe id="animacion" allow="autoplay" onload="ocultarLoader()"></iframe>
     </div>
     <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
   </div>
@@ -87,13 +106,27 @@
     }
 
     function extractVideoId(url) {
-      // Extrae el ID tanto de enlaces con 'export=download&id=' como 'file/d/'
       const match = url.match(/(?:export=download&id=|file\/d\/)([^\/\?]+)/);
       return match ? match[1] : null;
     }
 
+    function mostrarLoader() {
+      document.getElementById('loader').style.display = 'block';
+    }
+
+    function ocultarLoader() {
+      document.getElementById('loader').style.display = 'none';
+    }
+
     function revelarCarta() {
-      document.querySelector("button").style.display = "none";
+      const button = document.querySelector("button");
+      button.style.display = "none";
+      button.disabled = true;
+      
+      mostrarLoader();
+      document.getElementById("animacion").style.display = "none";
+      document.getElementById("card").style.display = "block";
+
       getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
         document.getElementById("mensaje").innerText = carta["Mensaje del día"];
@@ -102,11 +135,17 @@
         if (videoId) {
           const iframe = document.getElementById("animacion");
           iframe.src = `https://drive.google.com/file/d/${videoId}/preview?autoplay=1`;
+          iframe.style.display = "block";
+          iframe.onload = ocultarLoader;
         } else {
           console.error("No se pudo extraer el ID del video");
+          ocultarLoader();
         }
-        
-        document.getElementById("card").style.display = "block";
+      }).catch(error => {
+        console.error("Error al cargar la carta:", error);
+        ocultarLoader();
+        button.style.display = "block";
+        button.disabled = false;
       });
     }
 
