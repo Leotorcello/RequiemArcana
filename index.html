@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Requiem Arcana - Carta del Día</title>
+  <style>
+    body {
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      margin-top: 30px;
+      display: none;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    video {
+      width: 300px;
+      height: 500px;
+      max-width: 90vw;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>Requiem Arcana - Carta del Día</h1>
+  <p id="fecha"></p>
+  <button onclick="revelarCarta()">🔮 REVELAR</button>
+  <div class="card" id="card">
+    <h2 id="tituloCarta"></h2>
+    <video id="animacion" autoplay muted loop playsinline controls></video>
+    <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
+  </div>
+
+  <script>
+    async function getCartaDelDia() {
+      const res = await fetch('data.json');
+      const data = await res.json();
+      const hoy = new Date().toISOString().split('T')[0];
+      const hash = [...hoy].reduce((a,c) => a + c.charCodeAt(0), 0);
+      return data[hash % data.length];
+    }
+
+    function revelarCarta() {
+      document.querySelector("button").style.display = "none";
+      getCartaDelDia().then(carta => {
+        document.getElementById("tituloCarta").innerText = carta.Carta;
+        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
+        const video = document.getElementById("animacion");
+        video.src = carta.Animation_URL;
+        video.load();
+        document.getElementById("card").style.display = "block";
+      });
+    }
+
+    window.onload = function () {
+      const fecha = new Date();
+      document.getElementById("fecha").innerText = "Tu carta para hoy, " +
+        fecha.toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
+    };
+  </script>
+</body>
+</html>
