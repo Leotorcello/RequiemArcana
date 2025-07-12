@@ -1,0 +1,626 @@
+[
+  {
+    "Carta":"The Fool",
+    "Name_EN":"The Fool",
+    "Mensaje del día":"Hoy, The Fool te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Fool invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/0\/artifact"
+  },
+  {
+    "Carta":"The Magician",
+    "Name_EN":"The Magician",
+    "Mensaje del día":"Hoy, The Magician te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Magician invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/1\/artifact"
+  },
+  {
+    "Carta":"The High Priestess",
+    "Name_EN":"The High Priestess",
+    "Mensaje del día":"Hoy, The High Priestess te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The High Priestess invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/2\/artifact"
+  },
+  {
+    "Carta":"The Empress",
+    "Name_EN":"The Empress",
+    "Mensaje del día":"Hoy, The Empress te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Empress invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/3\/artifact"
+  },
+  {
+    "Carta":"The Emperor",
+    "Name_EN":"The Emperor",
+    "Mensaje del día":"Hoy, The Emperor te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Emperor invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/4\/artifact"
+  },
+  {
+    "Carta":"The Hierophant",
+    "Name_EN":"The Hierophant",
+    "Mensaje del día":"Hoy, The Hierophant te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Hierophant invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/5\/artifact"
+  },
+  {
+    "Carta":"The Lovers",
+    "Name_EN":"The Lovers",
+    "Mensaje del día":"Hoy, The Lovers te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Lovers invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/6\/artifact"
+  },
+  {
+    "Carta":"The Chariot",
+    "Name_EN":"The Chariot",
+    "Mensaje del día":"Hoy, The Chariot te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Chariot invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/8\/artifact"
+  },
+  {
+    "Carta":"Strength",
+    "Name_EN":"Strength",
+    "Mensaje del día":"Hoy, Strength te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Strength invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/9\/artifact"
+  },
+  {
+    "Carta":"The Hermit",
+    "Name_EN":"The Hermit",
+    "Mensaje del día":"Hoy, The Hermit te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Hermit invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/10\/artifact"
+  },
+  {
+    "Carta":"Wheel of Fortune",
+    "Name_EN":"Wheel of Fortune",
+    "Mensaje del día":"Hoy, Wheel of Fortune te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Wheel of Fortune invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/11\/artifact"
+  },
+  {
+    "Carta":"Justice",
+    "Name_EN":"Justice",
+    "Mensaje del día":"Hoy, Justice te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Justice invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/12\/artifact"
+  },
+  {
+    "Carta":"The Hanged Man",
+    "Name_EN":"The Hanged Man",
+    "Mensaje del día":"Hoy, The Hanged Man te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Hanged Man invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/13\/artifact"
+  },
+  {
+    "Carta":"Death",
+    "Name_EN":"Death",
+    "Mensaje del día":"Hoy, Death te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Death invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/14\/artifact"
+  },
+  {
+    "Carta":"Temperance",
+    "Name_EN":"Temperance",
+    "Mensaje del día":"Hoy, Temperance te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Temperance invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/15\/artifact"
+  },
+  {
+    "Carta":"The Devil",
+    "Name_EN":"The Devil",
+    "Mensaje del día":"Hoy, The Devil te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Devil invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/16\/artifact"
+  },
+  {
+    "Carta":"The Tower",
+    "Name_EN":"The Tower",
+    "Mensaje del día":"Hoy, The Tower te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Tower invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/17\/artifact"
+  },
+  {
+    "Carta":"The Star",
+    "Name_EN":"The Star",
+    "Mensaje del día":"Hoy, The Star te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Star invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/18\/artifact"
+  },
+  {
+    "Carta":"The Moon",
+    "Name_EN":"The Moon",
+    "Mensaje del día":"Hoy, The Moon te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Moon invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/19\/artifact"
+  },
+  {
+    "Carta":"The Sun",
+    "Name_EN":"The Sun",
+    "Mensaje del día":"Hoy, The Sun te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The Sun invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/20\/artifact"
+  },
+  {
+    "Carta":"Judgement",
+    "Name_EN":"Judgement",
+    "Mensaje del día":"Hoy, Judgement te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Judgement invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/21\/artifact"
+  },
+  {
+    "Carta":"The World",
+    "Name_EN":"The World",
+    "Mensaje del día":"Hoy, The World te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, The World invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1AVEmFCLAAR2dGbHDYDMEdbmDaCVJJiRZj\/21\/artifact"
+  },
+  {
+    "Carta":"Ace of Wands",
+    "Name_EN":"Ace of Wands",
+    "Mensaje del día":"Hoy, Ace of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ace of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/26\/artifact"
+  },
+  {
+    "Carta":"Two of Wands",
+    "Name_EN":"Two of Wands",
+    "Mensaje del día":"Hoy, Two of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Two of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/16\/artifact"
+  },
+  {
+    "Carta":"Three of Wands",
+    "Name_EN":"Three of Wands",
+    "Mensaje del día":"Hoy, Three of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Three of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/29\/artifact"
+  },
+  {
+    "Carta":"Four of Wands",
+    "Name_EN":"Four of Wands",
+    "Mensaje del día":"Hoy, Four of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Four of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/19\/artifact"
+  },
+  {
+    "Carta":"Five of Wands",
+    "Name_EN":"Five of Wands",
+    "Mensaje del día":"Hoy, Five of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Five of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/42\/artifact"
+  },
+  {
+    "Carta":"Six of Wands",
+    "Name_EN":"Six of Wands",
+    "Mensaje del día":"Hoy, Six of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Six of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/45\/artifact"
+  },
+  {
+    "Carta":"Seven of Wands",
+    "Name_EN":"Seven of Wands",
+    "Mensaje del día":"Hoy, Seven of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Seven of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/2\/artifact"
+  },
+  {
+    "Carta":"Eight of Wands",
+    "Name_EN":"Eight of Wands",
+    "Mensaje del día":"Hoy, Eight of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Eight of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/40\/artifact"
+  },
+  {
+    "Carta":"Nine of Wands",
+    "Name_EN":"Nine of Wands",
+    "Mensaje del día":"Hoy, Nine of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Nine of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/40\/artifact"
+  },
+  {
+    "Carta":"Ten of Wands",
+    "Name_EN":"Ten of Wands",
+    "Mensaje del día":"Hoy, Ten of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ten of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/14\/artifact"
+  },
+  {
+    "Carta":"Page of Wands",
+    "Name_EN":"Page of Wands",
+    "Mensaje del día":"Hoy, Page of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Page of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/43\/artifact"
+  },
+  {
+    "Carta":"Knight of Wands",
+    "Name_EN":"Knight of Wands",
+    "Mensaje del día":"Hoy, Knight of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Knight of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/56\/artifact"
+  },
+  {
+    "Carta":"Queen of Wands",
+    "Name_EN":"Queen of Wands",
+    "Mensaje del día":"Hoy, Queen of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Queen of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/33\/artifact"
+  },
+  {
+    "Carta":"King of Wands",
+    "Name_EN":"King of Wands",
+    "Mensaje del día":"Hoy, King of Wands te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, King of Wands invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/47\/artifact"
+  },
+  {
+    "Carta":"Ace of Cups",
+    "Name_EN":"Ace of Cups",
+    "Mensaje del día":"Hoy, Ace of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ace of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/31\/artifact"
+  },
+  {
+    "Carta":"Two of Cups",
+    "Name_EN":"Two of Cups",
+    "Mensaje del día":"Hoy, Two of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Two of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/24\/artifact"
+  },
+  {
+    "Carta":"Three of Cups",
+    "Name_EN":"Three of Cups",
+    "Mensaje del día":"Hoy, Three of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Three of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/32\/artifact"
+  },
+  {
+    "Carta":"Four of Cups",
+    "Name_EN":"Four of Cups",
+    "Mensaje del día":"Hoy, Four of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Four of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/21\/artifact"
+  },
+  {
+    "Carta":"Five of Cups",
+    "Name_EN":"Five of Cups",
+    "Mensaje del día":"Hoy, Five of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Five of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/8\/artifact"
+  },
+  {
+    "Carta":"Six of Cups",
+    "Name_EN":"Six of Cups",
+    "Mensaje del día":"Hoy, Six of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Six of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/57\/artifact"
+  },
+  {
+    "Carta":"Seven of Cups",
+    "Name_EN":"Seven of Cups",
+    "Mensaje del día":"Hoy, Seven of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Seven of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/34\/artifact"
+  },
+  {
+    "Carta":"Eight of Cups",
+    "Name_EN":"Eight of Cups",
+    "Mensaje del día":"Hoy, Eight of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Eight of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/3\/artifact"
+  },
+  {
+    "Carta":"Nine of Cups",
+    "Name_EN":"Nine of Cups",
+    "Mensaje del día":"Hoy, Nine of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Nine of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/41\/artifact"
+  },
+  {
+    "Carta":"Ten of Cups",
+    "Name_EN":"Ten of Cups",
+    "Mensaje del día":"Hoy, Ten of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ten of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/53\/artifact"
+  },
+  {
+    "Carta":"Page of Cups",
+    "Name_EN":"Page of Cups",
+    "Mensaje del día":"Hoy, Page of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Page of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/15\/artifact"
+  },
+  {
+    "Carta":"Knight of Cups",
+    "Name_EN":"Knight of Cups",
+    "Mensaje del día":"Hoy, Knight of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Knight of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/52\/artifact"
+  },
+  {
+    "Carta":"Queen of Cups",
+    "Name_EN":"Queen of Cups",
+    "Mensaje del día":"Hoy, Queen of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Queen of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/46\/artifact"
+  },
+  {
+    "Carta":"King of Cups",
+    "Name_EN":"King of Cups",
+    "Mensaje del día":"Hoy, King of Cups te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, King of Cups invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/20\/artifact"
+  },
+  {
+    "Carta":"Ace of Swords",
+    "Name_EN":"Ace of Swords",
+    "Mensaje del día":"Hoy, Ace of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ace of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/12\/artifact"
+  },
+  {
+    "Carta":"Two of Swords",
+    "Name_EN":"Two of Swords",
+    "Mensaje del día":"Hoy, Two of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Two of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/7\/artifact"
+  },
+  {
+    "Carta":"Three of Swords",
+    "Name_EN":"Three of Swords",
+    "Mensaje del día":"Hoy, Three of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Three of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/4\/artifact"
+  },
+  {
+    "Carta":"Four of Swords",
+    "Name_EN":"Four of Swords",
+    "Mensaje del día":"Hoy, Four of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Four of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/10\/artifact"
+  },
+  {
+    "Carta":"Five of Swords",
+    "Name_EN":"Five of Swords",
+    "Mensaje del día":"Hoy, Five of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Five of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/35\/artifact"
+  },
+  {
+    "Carta":"Six of Swords",
+    "Name_EN":"Six of Swords",
+    "Mensaje del día":"Hoy, Six of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Six of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/30\/artifact"
+  },
+  {
+    "Carta":"Seven of Swords",
+    "Name_EN":"Seven of Swords",
+    "Mensaje del día":"Hoy, Seven of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Seven of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/51\/artifact"
+  },
+  {
+    "Carta":"Eight of Swords",
+    "Name_EN":"Eight of Swords",
+    "Mensaje del día":"Hoy, Eight of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Eight of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/23\/artifact"
+  },
+  {
+    "Carta":"Nine of Swords",
+    "Name_EN":"Nine of Swords",
+    "Mensaje del día":"Hoy, Nine of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Nine of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/0\/artifact"
+  },
+  {
+    "Carta":"Ten of Swords",
+    "Name_EN":"Ten of Swords",
+    "Mensaje del día":"Hoy, Ten of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ten of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/49\/artifact"
+  },
+  {
+    "Carta":"Page of Swords",
+    "Name_EN":"Page of Swords",
+    "Mensaje del día":"Hoy, Page of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Page of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/39\/artifact"
+  },
+  {
+    "Carta":"Knight of Swords",
+    "Name_EN":"Knight of Swords",
+    "Mensaje del día":"Hoy, Knight of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Knight of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/38\/artifact"
+  },
+  {
+    "Carta":"Queen of Swords",
+    "Name_EN":"Queen of Swords",
+    "Mensaje del día":"Hoy, Queen of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Queen of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/27\/artifact"
+  },
+  {
+    "Carta":"King of Swords",
+    "Name_EN":"King of Swords",
+    "Mensaje del día":"Hoy, King of Swords te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, King of Swords invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/55\/artifact"
+  },
+  {
+    "Carta":"Ace of Pentacles",
+    "Name_EN":"Ace of Pentacles",
+    "Mensaje del día":"Hoy, Ace of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ace of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/6\/artifact"
+  },
+  {
+    "Carta":"Two of Pentacles",
+    "Name_EN":"Two of Pentacles",
+    "Mensaje del día":"Hoy, Two of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Two of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/11\/artifact"
+  },
+  {
+    "Carta":"Three of Pentacles",
+    "Name_EN":"Three of Pentacles",
+    "Mensaje del día":"Hoy, Three of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Three of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/37\/artifact"
+  },
+  {
+    "Carta":"Four of Pentacles",
+    "Name_EN":"Four of Pentacles",
+    "Mensaje del día":"Hoy, Four of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Four of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/48\/artifact"
+  },
+  {
+    "Carta":"Five of Pentacles",
+    "Name_EN":"Five of Pentacles",
+    "Mensaje del día":"Hoy, Five of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Five of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/28\/artifact"
+  },
+  {
+    "Carta":"Six of Pentacles",
+    "Name_EN":"Six of Pentacles",
+    "Mensaje del día":"Hoy, Six of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Six of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/36\/artifact"
+  },
+  {
+    "Carta":"Seven of Pentacles",
+    "Name_EN":"Seven of Pentacles",
+    "Mensaje del día":"Hoy, Seven of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Seven of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/18\/artifact"
+  },
+  {
+    "Carta":"Eight of Pentacles",
+    "Name_EN":"Eight of Pentacles",
+    "Mensaje del día":"Hoy, Eight of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Eight of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/9\/artifact"
+  },
+  {
+    "Carta":"Nine of Pentacles",
+    "Name_EN":"Nine of Pentacles",
+    "Mensaje del día":"Hoy, Nine of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Nine of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/13\/artifact"
+  },
+  {
+    "Carta":"Ten of Pentacles",
+    "Name_EN":"Ten of Pentacles",
+    "Mensaje del día":"Hoy, Ten of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Ten of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/50\/artifact"
+  },
+  {
+    "Carta":"Page of Pentacles",
+    "Name_EN":"Page of Pentacles",
+    "Mensaje del día":"Hoy, Page of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Page of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/25\/artifact"
+  },
+  {
+    "Carta":"Knight of Pentacles",
+    "Name_EN":"Knight of Pentacles",
+    "Mensaje del día":"Hoy, Knight of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Knight of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/17\/artifact"
+  },
+  {
+    "Carta":"Queen of Pentacles",
+    "Name_EN":"Queen of Pentacles",
+    "Mensaje del día":"Hoy, Queen of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, Queen of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/44\/artifact"
+  },
+  {
+    "Carta":"King of Pentacles",
+    "Name_EN":"King of Pentacles",
+    "Mensaje del día":"Hoy, King of Pentacles te invita a observar lo que se está gestando en tu interior. Este día es una oportunidad para conectar con tu poder y presencia.",
+    "Mensaje_en":"Today, King of Pentacles invites you to observe what is stirring within. This is a chance to connect with your power and presence.",
+    "Deck":"Requiem Arcana",
+    "Animation_URL":"https:\/\/assets.objkt.media\/file\/assets-003\/KT1FUioHT8JB1xcrmCEMgDRp3jCoCpXkRS1P\/54\/artifact"
+  }
+]
