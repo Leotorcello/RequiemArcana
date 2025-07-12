@@ -1,548 +1,392 @@
 [
   {
     "Carta":"El Loco",
-    "Name_EN":"The Fool",
-    "Mensaje del día":"Hoy, El Loco te invita a soltar el control y permitirte experimentar la vida como una aventura. Es momento de confiar en tu intuición más allá de la lógica. Dejá que el asombro guíe tus pasos. Hoy podés caminar hacia lo desconocido con el corazón abierto, sabiendo que el primer paso, aunque incierto, es el más verdadero.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Loco te invita a liberarte de expectativas, miedos y estructuras. Hay algo en vos que quiere nacer desde la inocencia, desde el asombro. No necesitás tenerlo todo resuelto para empezar a andar. El primer paso, aunque incierto, es sagrado. Permitite jugar, confiar y equivocarte. La vida te cuida cuando saltás con el corazón abierto.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1EVVebRPqTt4pJ_Fu9Sa7NOWgdqjHsZ6P"
   },
   {
     "Carta":"El Mago",
-    "Name_EN":"The Magician",
-    "Mensaje del día":"El Mago te recuerda hoy que tenés todos los elementos para manifestar tu voluntad. Observá dónde estás poniendo tu energía: lo que enfocás, crece. Hoy es un día para usar tu palabra como acto creador, para alinear pensamiento, emoción y acción, y reconocer que el poder está en vos.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Mago te recuerda que sos canal entre lo invisible y lo visible. Tenés todas las herramientas en tus manos, no por azar, sino porque estás listo. Tu palabra, tu acción, tu presencia… todo es acto creativo. Usá tu poder con conciencia, con belleza, con propósito. No esperes que algo suceda: hacelo suceder. El universo responde a quien se anima a crear.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1dMQ4cDDn1qGyFTtdeFzdzzrahHXHnCv4"
   },
   {
-    "Carta":"La Suma Sacerdotisa",
-    "Name_EN":"The High Priestess",
-    "Mensaje del día":"Hoy, la Suma Sacerdotisa te invita al silencio y a la escucha profunda. No todo se revela en lo externo. Hay respuestas que solo llegan cuando bajás el ruido y habitás tu templo interior. Hoy, honrá tu intuición, tu misterio, tu conexión con lo invisible.",
-    "Deck":"Requiem Arcana",
+    "Carta":"La Sacerdotisa",
+    "Mensaje del día":"Hoy, La Sacerdotisa te invita al silencio interior. No todo necesita entenderse con la mente. Hay verdades que sólo se revelan cuando te rendís al misterio y escuchás tu intuición. Honrá tus ritmos, tus tiempos, tu profundidad. La sabiduría no siempre grita: a veces, susurra en la quietud.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=17riP5Hkj2nKxTd-kka5p8qBq7H9RZFHo"
   },
   {
     "Carta":"La Emperatriz",
-    "Name_EN":"The Empress",
-    "Mensaje del día":"La Emperatriz te abraza con su fertilidad creativa. Hoy es un día para gestar, nutrir, y abrir espacio a la belleza. ¿Qué estás alimentando en tu vida? Esta carta te recuerda que sos fuente de vida y creación. Honrá tu cuerpo, tus ciclos y todo lo que brota desde tu alma.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Emperatriz te invita a abrazar tu capacidad de dar vida, de cuidar, de fecundar ideas, vínculos, espacios. Es momento de conectar con la abundancia que ya está dentro tuyo, con el arte de nutrir sin perderte. Lo que alimentás hoy crecerá. Sintonizá con la tierra, con lo femenino sagrado, con la belleza del proceso lento y orgánico. Estás gestando algo valioso: honralo y dale tiempo.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1dsOQCu-cIoF6E6pMZKNpqTGUSx7QFxm7"
   },
   {
     "Carta":"El Emperador",
-    "Name_EN":"The Emperor",
-    "Mensaje del día":"Hoy, el Emperador te habla de estructura, dirección y firmeza. Es tiempo de poner límites, ordenar tu territorio interno y tomar decisiones desde la madurez. Tu liderazgo es necesario. Hoy se trata de sostener lo que vale la pena y construir con base sólida.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Emperador te llama a ordenar tu mundo desde una base firme. Es momento de tomar decisiones con claridad, de establecer límites sanos, de construir con visión. La autoridad que ejercés afuera debe estar sostenida por coherencia interna. No temas asumir el rol de líder si lo hacés con corazón. Tu estructura puede sostener no solo tu vida, sino también la de otros.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1A6EIcGU8_oEvfG9Difc2JJC6qt1utOul"
   },
   {
     "Carta":"El Hierofante",
-    "Name_EN":"The Hierophant",
-    "Mensaje del día":"El Hierofante te invita hoy a conectar con una sabiduría ancestral. Podés ser puente entre el cielo y la tierra, entre lo espiritual y lo cotidiano. Es momento de aprender, enseñar o recordar lo sagrado que habita en los rituales simples de cada día.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Hierofante te conecta con lo sagrado transmitido a través del tiempo. Buscá la enseñanza, honrá a tus maestros, recibí la sabiduría que ya fue recorrida por otros. También podés ser guía si compartís tu experiencia desde la humildad. No estás solo en tu búsqueda: la tradición puede ser un faro si sabés leer su luz.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1_mkRPoWE7P33ixfN7O9yE9gxJ4L9E1MB"
   },
   {
     "Carta":"Los Enamorados",
-    "Name_EN":"The Lovers",
-    "Mensaje del día":"Hoy, los Enamorados te proponen una elección desde el corazón. ¿Qué voz vas a escuchar? La tuya, o la que espera el mundo de vos. Es día de alinear tu deseo con tu camino. El amor, para ser verdadero, tiene que ser libre. Elegí desde la verdad.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, Los Enamorados te invitan a mirar tus decisiones con honestidad emocional. No se trata solo de amor, sino de alineación interna. Elegí lo que te unifica por dentro, aunque cueste. Tu camino se define por cada elección que hacés desde el alma. Hoy es un buen día para decirle sí a lo que realmente amás.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1J5cXov8Fv1TwR2Jw3L60ahu6OBawsivN"
   },
   {
     "Carta":"El Carro",
-    "Name_EN":"The Chariot",
-    "Mensaje del día":"El Carro te impulsa hacia adelante. Hoy es un día para avanzar, para tomar las riendas de tu vida con determinación. Las fuerzas internas se alinean si sabés hacia dónde vas. Este es un momento de conquista, pero primero conquistate a vos mismo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Carro te impulsa hacia adelante con determinación. Tu energía está disponible para conquistar lo que te proponés, pero necesitás dirección clara. No dejes que los impulsos te arrastren: conducí con intención. Este es un momento para afirmarte, avanzar, tomar las riendas. Tu voluntad es un motor poderoso si sabés a dónde vas.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1cDis6uFXADBHhHESMyCLm-HuM4niTqP8"
   },
   {
     "Carta":"La Fuerza",
-    "Name_EN":"Strength",
-    "Mensaje del día":"Hoy, La Fuerza no te pide dureza, sino dulzura firme. Es momento de abrazar tu parte salvaje sin reprimirla ni dejar que te domine. La verdadera fortaleza viene del corazón, de la compasión con vos mismo. Domá con amor, no con látigo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Fuerza te recuerda que el poder no es dominio, sino presencia firme y amorosa. Domar tus impulsos no es reprimirlos, sino integrarlos. Tenés la capacidad de transformar lo salvaje en sabiduría si lo abrazás con ternura. No subestimes el coraje que nace desde la compasión. Tu calma es más fuerte que cualquier tormenta.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1MagC7B0Evfg5LE0gPLEIW5_sHhE8wule"
   },
   {
     "Carta":"El Ermitaño",
-    "Name_EN":"The Hermit",
-    "Mensaje del día":"El Ermitaño te llama hoy a retirarte un momento del ruido. La sabiduría que buscás no está afuera. Encendé tu linterna interior y caminá tu propio camino, aunque sea en soledad. Hoy es día de introspección, de silencio fértil, de encuentro con vos.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Ermitaño te invita a retirarte del ruido para encontrar tu luz interior. No es soledad, es recogimiento. Escuchá tu propia verdad, volvé a tu centro, reconectá con lo esencial. Las respuestas que buscás afuera viven en tu silencio. Tu linterna interior puede iluminar no solo tu camino, sino el de otros.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1UEmFz6772SFQ9KiAFGUhDSeCa6t0ke7Z"
   },
   {
     "Carta":"La Rueda de la Fortuna",
-    "Name_EN":"Wheel of Fortune",
-    "Mensaje del día":"Hoy, la Rueda de la Fortuna te recuerda que todo cambia, que nada es permanente. Si estás arriba, agradecé. Si estás abajo, respirá: esto también va a pasar. Hoy es un buen día para entregarte al flujo de la vida con confianza, sin querer controlarlo todo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Rueda de la Fortuna te recuerda que todo cambia, nada es eterno. Estás girando dentro del ciclo de la vida, a veces arriba, a veces abajo. En vez de resistir, aprendé a bailar con el movimiento. Confía en que todo se acomoda, incluso lo que hoy no entendés. Estás exactamente donde necesitás estar para lo que tu alma vino a aprender.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1hi8u5KEpO4dTJ_aq0vwr9v-1JFjbj-Nr"
   },
   {
     "Carta":"La Justicia",
-    "Name_EN":"Justice",
-    "Mensaje del día":"La Justicia te invita hoy a mirar con objetividad, a reconocer lo que sembraste y lo que hoy estás cosechando. Es momento de asumir la responsabilidad de tus actos con honestidad. Hoy podés encontrar equilibrio si actuás desde la verdad.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Justicia te llama a ser coherente, a alinear tus palabras con tus actos. Es momento de observar con objetividad, sin excusas ni autoengaños. Lo que sembrás, cosechás. Hoy tenés la oportunidad de restablecer el equilibrio, tanto en tus vínculos como dentro tuyo. La verdad, por más filosa que sea, siempre es sanadora.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1ny3QlnXPIhetgi6W9p5YHlYObZaADEx1"
   },
   {
     "Carta":"El Colgado",
-    "Name_EN":"The Hanged Man",
-    "Mensaje del día":"El Colgado te propone una pausa. Hoy no es momento de avanzar, sino de mirar desde otro ángulo. Esta carta te invita a rendirte sin resignarte, a soltar el control y confiar en que el cambio de perspectiva trae iluminación.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Colgado te invita a detenerte, a rendirte al tiempo sagrado de la pausa. Hay una mirada nueva que quiere revelarse, pero solo podés verla si soltar el control. Dejá de empujar, de forzar. Permití que el vacío te hable. El sacrificio que hacés hoy no es pérdida, es transmutación.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=10mjyFkcNHm_mYIBZPQPvm2uun1INP4Xl"
   },
   {
     "Carta":"La Muerte",
-    "Name_EN":"Death",
-    "Mensaje del día":"Hoy, la Muerte llega como maestra del cambio profundo. No te resistas a lo que está pidiendo terminar. Lo que muere hoy deja espacio fértil para lo nuevo. Honrá tus duelos, tus cierres, tus mutaciones. Morir es también renacer.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Muerte te confronta con lo inevitable: algo en vos necesita morir para que otra parte pueda nacer. No es final, es metamorfosis. No le temas a soltar lo viejo, lo conocido. Estás cruzando un umbral interno profundo. Detrás del duelo hay un brote esperándote.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1jdpSUN_oWTkYCV0Eu98WDFET1BEg_OFY"
   },
   {
     "Carta":"La Templanza",
-    "Name_EN":"Temperance",
-    "Mensaje del día":"La Templanza te acompaña hoy a cultivar la armonía entre opuestos. Es momento de integrar, no de dividir. Hoy podés practicar la paciencia, el balance, y la alquimia interior. Lo justo, lo necesario, lo que nutre. Eso es lo que vale.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Templanza te ofrece su alquimia. Entre opuestos, entre extremos, entre tiempos: hay una integración posible. No es momento de apurarse. Escuchá el ritmo de tu interior y dejá que lo nuevo se mezcle con lo viejo para crear algo más sabio. Hoy tu tarea es sostener el equilibrio sutil.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1mKXiF5UHk6ry62WebYrlnifGQ6zHm-x0"
   },
   {
     "Carta":"El Diablo",
-    "Name_EN":"The Devil",
-    "Mensaje del día":"El Diablo te confronta con tus apegos y tus sombras. Hoy podés mirar de frente lo que te tiene atado: creencias, miedos, vínculos tóxicos. Esta carta no te condena, te libera si te animás a ver. Tu poder está en dejar de negar.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Diablo te enfrenta con lo que te tiene atrapado. Tus deseos, tus miedos, tus patrones repetidos. Nada afuera te encadena si no hay una parte tuya que ya estaba cediendo. No te juzgues: observá con coraje. Nombrar tus sombras es el primer paso para liberarte de ellas.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1Tij7oJnl2Sr3rXQCqz6EzwCVONXWGU8s"
   },
   {
     "Carta":"La Torre",
-    "Name_EN":"The Tower",
-    "Mensaje del día":"Hoy, la Torre rompe estructuras que ya no sostienen tu verdad. Aunque duela, lo que se cae era una cárcel. Permitite el derrumbe como acto de sanación. Después del temblor, viene el cielo abierto.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Torre sacude lo que dabas por hecho. Una estructura mental, un vínculo, una idea fija... todo puede caer cuando ya no sostiene tu verdad. Aunque duela, agradecé la ruptura. El derrumbe es, en realidad, la apertura. Lo esencial sobrevive a cualquier temblor.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1f6W6IBLxR1e81C0k7BdvdLZoVBAmz6zR"
   },
   {
     "Carta":"La Estrella",
-    "Name_EN":"The Star",
-    "Mensaje del día":"La Estrella te recuerda hoy tu luz, tu esperanza, tu capacidad de sanar. Es momento de reconectar con tu propósito, con tu guía interna, con tu fe. Hoy podés abrirte a recibir la energía del universo como bálsamo para tu alma.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Estrella te baña con esperanza. Después del caos, hay agua clara que limpia. Estás siendo guiado por algo más grande. Confiá en tu brillo, incluso si no lo ves aún. Hoy es un día para renovar la fe en vos, en la vida, en lo sagrado que te habita.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1HzVzbuCgDn1QQxc1hZDyPxATK4Ox8gqo"
   },
   {
     "Carta":"La Luna",
-    "Name_EN":"The Moon",
-    "Mensaje del día":"Hoy, la Luna te sumerge en tus emociones profundas. Puede haber confusión, intuiciones intensas, sueños reveladores. No todo es claro, y está bien. Este día te invita a habitar tu mundo interno sin exigir certezas.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, La Luna te invita a descender al mundo del alma. Tus sueños, tus intuiciones, tus emociones fluctuantes... todo es valioso si sabés leerlo. No todo es lo que parece, pero todo tiene un mensaje. Escuchá sin apuro, transitá sin respuestas. Hay un tesoro esperándote en lo profundo.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1RJPE-9l70Vwki_xwZJGs8oCkpuKn_mOy"
   },
   {
     "Carta":"El Sol",
-    "Name_EN":"The Sun",
-    "Mensaje del día":"El Sol ilumina tu camino hoy con alegría, vitalidad y claridad. Es momento de compartir, de expresarte, de confiar en lo que sos. Hoy podés abrazar tu niñx interior y celebrar la vida sin miedo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Sol te ilumina con verdad, alegría y vitalidad. Dejá que tu niño interior juegue sin miedo. Mostrate sin máscaras. Es un buen momento para compartir, para celebrar, para confiar en la vida. Sos más amado y más brillante de lo que recordabas.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=13CGEHDxKWjAg1Jxf2kcZLqafQsBgR78J"
   },
   {
     "Carta":"El Juicio",
-    "Name_EN":"Judgement",
-    "Mensaje del día":"El Juicio te llama a despertar. Hoy es un día para escuchar esa voz que te dice que es hora de cambiar, de liberarte, de evolucionar. Esta carta es una llamada del alma. ¿La vas a atender?",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Juicio te llama al despertar. Algo en vos quiere resurgir, responder al llamado de tu alma. Es tiempo de dejar atrás culpas, historias viejas, rencores. Escuchá esa voz profunda que dice: es ahora. Estás renaciendo.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1NDIcT6AzI6BzaF1D6KhaB3jth2KmHVrk"
   },
   {
     "Carta":"El Mundo",
-    "Name_EN":"The World",
-    "Mensaje del día":"El Mundo te envuelve con su danza de cierre y plenitud. Hoy podés reconocer cuánto has crecido, cuánto aprendiste. Celebrá tu camino, honrá tu recorrido, y abrí el círculo para que vuelva a empezar desde otro nivel.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, El Mundo te bendice con la culminación de un ciclo. Llegaste a un cierre sagrado. Agradecé cada paso, incluso los más oscuros. Todo fue necesario. Ahora podés integrar, celebrar, y prepararte para el nuevo viaje que ya comienza a gestarse en vos.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=15yQRA-4jSnoUtsq2PRwuBS1VYrgZXGLJ"
   },
   {
     "Carta":"As de Bastos",
-    "Name_EN":"Ace of Wands",
-    "Mensaje del día":"Hoy, el As de Bastos enciende la chispa de un nuevo fuego interior. Es tiempo de dar el primer paso hacia una acción creativa, auténtica, vital. No postergues más lo que te enciende: esa idea, ese deseo, ese impulso necesita nacer.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el As de Bastos enciende en vos una chispa sagrada. Es el primer aliento del fuego creador que habita en tu interior. Una idea, una visión, una energía vital busca nacer. No lo postergues. Hoy es día para iniciar, para actuar, para encender el motor de lo nuevo. Confiá en esa intuición ardiente que te señala por dónde comenzar. Aunque no tengas el plan completo, avanzá con coraje. El universo responde cuando te animás a dar el primer paso con convicción.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1q79LXLPyCCcfBeik8Wxg-B-HXCRvNmO4"
   },
   {
     "Carta":"Dos de Bastos",
-    "Name_EN":"Two of Wands",
-    "Mensaje del día":"El Dos de Bastos te invita hoy a mirar hacia el horizonte con estrategia y confianza. Es momento de ampliar tus límites, de proyectar más allá de lo cómodo. Hoy se abre ante vos la posibilidad de elegir el rumbo con consciencia.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Dos de Bastos te enfrenta con tu visión a futuro. Hay en vos un anhelo por expandirte, por salir de lo conocido, por conquistar nuevos territorios internos o externos. No te detengas en la duda. Este es el momento de planear con intención, de ponerle palabras al deseo y dirección al impulso. El mundo está ahí afuera, esperando que lo habites desde tu verdad más genuina. No hay crecimiento sin riesgo.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1aXAC7FIgJazYOAxEfFOEfn8Jlj3ItDEm"
   },
   {
     "Carta":"Tres de Bastos",
-    "Name_EN":"Three of Wands",
-    "Mensaje del día":"Hoy, el Tres de Bastos te pide que confíes en lo que ya sembraste. El movimiento ya empezó. Observá con gratitud los frutos que se acercan. Este es un día para visualizar en grande y mantener tu energía alineada con tu visión.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Tres de Bastos confirma que tu semilla está germinando. Has tomado decisiones valientes y ahora es tiempo de sostener la mirada en el horizonte. Hay señales, hay respuestas, hay sincronicidades que indican que vas bien. Este es un día para confiar en el proceso, para prepararte a recibir, para visualizar en grande. Lo que viene hacia vos es consecuencia de lo que sembraste con conciencia. Mantené la fe y seguí caminando.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1aDxXz-5akVDjvu3i31YIiXC128wYrH-Q"
   },
   {
     "Carta":"Cuatro de Bastos",
-    "Name_EN":"Four of Wands",
-    "Mensaje del día":"El Cuatro de Bastos te regala hoy una pausa de celebración. Reconocé lo logrado, compartí la alegría con quienes acompañan tu camino. Hoy es día de armonía, de unión, de hogar expandido desde el corazón.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cuatro de Bastos te invita a celebrar. No todo es lucha y esfuerzo. También hay pausas sagradas para agradecer lo logrado, para compartir con otros la alegría del camino recorrido. Hoy es un buen día para reconocer tus raíces, tus logros, tus vínculos más fértiles. Abrí tu casa, tu corazón, tu alma. La felicidad también se construye celebrando lo que ya es. Honrá el presente con gozo.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=16Em3cTQBF32LJ6tv3KXhbtr8D568XAsi"
   },
   {
     "Carta":"Cinco de Bastos",
-    "Name_EN":"Five of Wands",
-    "Mensaje del día":"Hoy, el Cinco de Bastos te enfrenta con tensiones internas o externas. En vez de pelear, escuchá. Esta carta te recuerda que el conflicto puede ser una puerta a nuevas formas de vincularte y de afirmarte sin destruir.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cinco de Bastos te sitúa en medio del conflicto, del desafío, de la tensión creativa. Tal vez haya competencia, roces, diferencias. Pero no todo enfrentamiento es negativo. Esta fricción puede ayudarte a afinar tus ideas, a afirmar tu lugar, a fortalecer tu posición. No reacciones desde el ego. Observá qué está queriendo emerger a través del caos. A veces, el fuego pule el oro.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1w38g1kuSUYL0hDI3Ok5YlbcQ1k3y0HAO"
   },
   {
     "Carta":"Seis de Bastos",
-    "Name_EN":"Six of Wands",
-    "Mensaje del día":"El Seis de Bastos te invita hoy a reconocerte triunfador. No por ego, sino por haber superado pruebas. Hoy podés caminar con orgullo, sabiendo que tu proceso está dando frutos. Compartí tu luz con humildad.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Seis de Bastos te reconoce por lo logrado. Has atravesado pruebas, resistido tempestades y alcanzado un lugar de honor. Permitite recibir el reconocimiento sin culpa, sin falsa modestia. El aplauso no es vanidad si nace del alma. Hoy tu luz brilla porque te animaste a sostenerla. Compartí este momento con gratitud, sabiendo que tu camino recién empieza.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1Ytq5FXcgvFeD7gJW-R4e9ZgnydfcpKrm"
   },
   {
     "Carta":"Siete de Bastos",
-    "Name_EN":"Seven of Wands",
-    "Mensaje del día":"Hoy, el Siete de Bastos te impulsa a defender tu verdad. Tal vez sientas que tenés que sostener tu visión frente a presiones externas. Esta carta te recuerda que si actuás desde el alma, estás respaldado.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Siete de Bastos te pide firmeza. Estás en una posición elevada, pero no exenta de desafíos. Tal vez otros cuestionen tus decisiones, o tus propias dudas te enfrenten. Este no es momento de ceder. Afirmate en lo que creés, defendé tu visión con presencia y respeto. Hoy el verdadero coraje consiste en sostener tu lugar sin aplastar al otro.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1vzDsVR-cfswl9FC2qkbzosw9qLSnMIy2"
   },
   {
     "Carta":"Ocho de Bastos",
-    "Name_EN":"Eight of Wands",
-    "Mensaje del día":"El Ocho de Bastos anuncia movimiento veloz. Hoy pueden llegar noticias, oportunidades o ideas súbitas. Estás en una etapa donde la energía fluye. Aprovechala. Es momento de actuar sin dudar, con claridad y dirección.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Ocho de Bastos trae velocidad, resolución y fluidez. Lo que parecía estancado se libera. Noticias, oportunidades o decisiones pueden llegar de golpe. Estás siendo impulsado hacia adelante. No pierdas tiempo en dudas: respondé con claridad, acción y dirección. El universo se alinea cuando vos también te movés sin resistencia.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1EuzCrDufVNLU7GCWnMTly86wkLYrcRKW"
   },
   {
     "Carta":"Nueve de Bastos",
-    "Name_EN":"Nine of Wands",
-    "Mensaje del día":"Hoy, el Nueve de Bastos te recuerda que estás más cerca de lo que creés. Aunque estés cansado, no bajes los brazos. Esta carta es la resistencia sabia, la fuerza que se forja al atravesar pruebas. Afirmate en tu propósito.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Nueve de Bastos te sostiene en la resistencia. Llegaste hasta acá con esfuerzo, y quizás el cansancio te pese. Pero aún queda fuerza en vos. No es momento de rendirse. Respirá, tomá impulso y seguí. Cada cicatriz es señal de tu compromiso. Hoy tu constancia vale más que la comodidad.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1YWEnf5ayIaYO9M-FucI3Zpf46-1J5RxS"
   },
   {
     "Carta":"Diez de Bastos",
-    "Name_EN":"Ten of Wands",
-    "Mensaje del día":"El Diez de Bastos te muestra hoy el peso que estás cargando. ¿Qué no te corresponde? ¿Qué podrías delegar? Hoy es un día para revisar tus cargas, soltar lo innecesario y reencontrarte con tu centro.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Diez de Bastos te muestra el peso que estás cargando. Tal vez asumiste más de lo que te corresponde, o creés que tenés que hacerlo todo solo. Este es un día para revisar, soltar, delegar. Liberarte no es abandono, es sabiduría. Cuidá tu cuerpo, tu energía, tu bienestar. No sos menos valioso por pedir ayuda.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=16ioyTDyWx1Xs393osim03t57bGMBgKb_"
   },
   {
     "Carta":"Sota de Bastos",
-    "Name_EN":"Page of Wands",
-    "Mensaje del día":"La Sota de Bastos te inspira hoy a aventurarte con curiosidad. Es tiempo de explorar nuevas pasiones, ideas, caminos. Con mente abierta y corazón dispuesto, esta carta te invita a aprender haciendo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Sota de Bastos despierta tu curiosidad ardiente. Sos aprendiz del fuego: inquieto, creativo, impaciente por descubrir. Hay una pasión que te llama y que aún no sabés cómo encarnar. Dejá que el entusiasmo guíe tus pasos. Este es el comienzo de un viaje lleno de descubrimientos. Permitite explorar sin miedo a equivocarte.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1gBYZnei2G2MU1eGcZPgaoEJTqUyK5cqA"
   },
   {
     "Carta":"Caballo de Bastos",
-    "Name_EN":"Knight of Wands",
-    "Mensaje del día":"El Caballo de Bastos te impulsa con fuego y decisión. Hoy es día de moverte con pasión, pero sin perder el foco. Esta energía es poderosa si la dirigís bien. Que tu entusiasmo sea brújula, no distracción.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Caballo de Bastos te impulsa a avanzar sin miedo. Tu fuego interno está en expansión, y si lo canalizás con enfoque, podés lograr grandes cosas. Cuidado con la impulsividad: no se trata de correr por correr, sino de saber hacia dónde vas. Usá tu energía con dirección, y el mundo responderá a tu paso decidido.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1xn-0DtUzwRkg4WqOJbxn2z2eKAS0zFbr"
   },
   {
     "Carta":"Reina de Bastos",
-    "Name_EN":"Queen of Wands",
-    "Mensaje del día":"La Reina de Bastos te conecta hoy con tu magnetismo y autenticidad. Es momento de confiar en tu poder expresivo, en tu fuego creativo. Hoy brillás desde adentro hacia afuera, sin pedir permiso.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Reina de Bastos te recuerda tu magnetismo, tu fuerza creativa y tu seguridad interior. Sos un faro de inspiración cuando actuás desde tu autenticidad. No escondas tu fuego: usalo para liderar, para sanar, para crear. Hoy tu presencia tiene el poder de encender la vida en otros. Confiá en lo que emanás.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1aiLaROYM3C5-kKG5Ldk49I388p_W4FI2"
   },
   {
     "Carta":"Rey de Bastos",
-    "Name_EN":"King of Wands",
-    "Mensaje del día":"El Rey de Bastos te invita a liderar con pasión y visión clara. Hoy podés sostener un proyecto, inspirar a otros y actuar con madurez. Esta carta te recuerda que el fuego bien dirigido construye imperios del alma.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Rey de Bastos te invita a liderar desde la visión. Sos estratega, guía, pionero. No necesitás controlar: tu fuego es tan fuerte que otros te siguen naturalmente. Dirigí con integridad, sostené con pasión, inspirá con tu ejemplo. Hoy estás llamado a encarnar el fuego sabio del liderazgo verdadero.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=15PkHj6G1ItPgQX2A63FiJKd23TKziVL1"
   },
   {
     "Carta":"As de Copas",
-    "Name_EN":"Ace of Cups",
-    "Mensaje del día":"Hoy, el As de Copas abre tu corazón a un nuevo sentir. Es momento de dejar que el amor, la ternura y la conexión fluyan sin barreras. Permitite emocionarte, abrirte, recibir.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el As de Copas abre tu corazón como un cáliz sagrado. Es la fuente del amor, la compasión, la sensibilidad renovada. Algo quiere fluir desde lo más profundo de tu alma: una emoción, una conexión, una intuición divina. Permitite sentir sin barreras, amar sin cálculo, vibrar sin miedo. Esta es una oportunidad para recibir y dar desde el centro más puro. Hoy el amor no se busca: se permite.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1Ro1BAz2NgY6MYgX8Hx5PKrjpyyAgU2BW"
   },
   {
     "Carta":"Dos de Copas",
-    "Name_EN":"Two of Cups",
-    "Mensaje del día":"El Dos de Copas te invita hoy al encuentro. Con otro, o con vos mismo. Es día de armonía emocional, de unión profunda, de reconocerte en el reflejo. Honrá los vínculos que nutren.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Dos de Copas te conecta con el encuentro profundo. No es cualquier vínculo: es aquel donde el alma reconoce al alma, donde la mirada no evade, donde hay espejo y aceptación. Podés cruzarte con alguien significativo o reconectar con tu propia energía femenina y masculina en equilibrio. Hoy el amor se manifiesta en forma de alianza sagrada. No temas entregarte si el corazón está presente.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1UOXMCHhBgYsj9hbvQu6MsiZllf3GuMvC"
   },
   {
     "Carta":"Tres de Copas",
-    "Name_EN":"Three of Cups",
-    "Mensaje del día":"Hoy, el Tres de Copas celebra la amistad, la red, el gozo compartido. Esta carta te recuerda que no estás solo. Rodeate de quienes vibran en tu alegría y creá rituales que festejen la vida.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Tres de Copas te recuerda que la vida también es celebración, encuentro, goce compartido. Rodeate de amistades sinceras, buscá espacios donde puedas ser vos sin máscaras. El alma también se expande en la risa, en el brindis, en la danza. Hoy agradecé a quienes te acompañan sin exigencias. La alegría compartida tiene un poder sanador más grande del que imaginás.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1fFI7r-VyOeUOKAOt_kUjvEPgsVoiLt_V"
   },
   {
     "Carta":"Cuatro de Copas",
-    "Name_EN":"Four of Cups",
-    "Mensaje del día":"El Cuatro de Copas señala hoy una desconexión emocional. Quizás estás mirando lo que falta y no ves lo que se ofrece. Hoy podés elegir abrirte otra vez al asombro, al presente, al amor disponible.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cuatro de Copas te encuentra cerrado emocionalmente. Estás tan enfocado en lo que falta, en lo que no fue, que no estás viendo lo que la vida te ofrece en este mismo instante. Tal vez haya una bendición frente a vos que no reconocés. Permitite sentir, aunque sea incómodo. Abrí espacio para lo inesperado. A veces lo que necesitás no se parece a lo que imaginabas.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1HynHLoD1W_5rV16qP3JJ5k4dXklMJBCs"
   },
   {
     "Carta":"Cinco de Copas",
-    "Name_EN":"Five of Cups",
-    "Mensaje del día":"Hoy, el Cinco de Copas honra el duelo. Algo se perdió, y es válido sentirlo. Esta carta te acompaña a transitar la tristeza sin quedarte anclado en ella. Hay copas aún de pie. Hay vida más allá del dolor.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cinco de Copas te confronta con la tristeza. Algo se perdió, algo dolió, algo ya no es. Honrá ese duelo con presencia. Llorá si lo necesitás, reconocé la herida. Pero no te quedes mirando las copas caídas para siempre. Hay algo que permanece, hay amor aún disponible, hay futuro más allá del dolor. Lo que se rompió también enseña.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1D2Q3Optvv-IMu4f-tJ7MB28BjmJALetE"
   },
   {
     "Carta":"Seis de Copas",
-    "Name_EN":"Six of Cups",
-    "Mensaje del día":"El Seis de Copas te invita hoy a reconectar con tu niñez, tu inocencia, tus recuerdos más puros. Mirá el pasado con ternura, pero no te quedes allí. Hoy podés traer esa luz al presente.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Seis de Copas te conecta con la ternura del pasado. Pueden aparecer recuerdos, personas, emociones que te traen nostalgia. No es para quedarte atrapado, sino para integrar con amor esa parte de tu historia. Tu niño interior quiere hablarte, abrazarte, sentirse seguro. Escuchalo. En la inocencia de lo que fuiste hay claves para lo que sos hoy.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1fGv8mgNF7TmhxtaOMZJ5JmSwcdK4AtJ1"
   },
   {
     "Carta":"Siete de Copas",
-    "Name_EN":"Seven of Cups",
-    "Mensaje del día":"Hoy, el Siete de Copas te muestra muchas opciones... ¿cuáles son verdaderas? Esta carta te invita a discernir entre fantasía y realidad, y a elegir desde la claridad emocional. No todo lo que brilla nutre.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Siete de Copas te muestra demasiadas opciones. Deseos, fantasías, caminos posibles... pero no todos son reales ni nutritivos. Este no es un día para decidir apurado, sino para conectar con tu verdad más profunda. ¿Qué querés de verdad? ¿Qué deseo es tuyo y cuál es prestado? Hoy es día para discernir con el corazón despierto.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1XzYOo0VXE9BomBZIyY6VBCjX9GAk5eSw"
   },
   {
     "Carta":"Ocho de Copas",
-    "Name_EN":"Eight of Cups",
-    "Mensaje del día":"El Ocho de Copas te impulsa a soltar lo que ya no te llena. Aunque haya sido bello, si ya no vibra con tu alma, es tiempo de partir. Hoy es un día para caminar hacia lo que sí te nutre profundamente.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Ocho de Copas te invita a dejar atrás lo que ya no nutre. Incluso si alguna vez fue valioso, si ya no te llena, es momento de partir. Esto no es abandono, es evolución. Caminá hacia tu verdad, aunque no sepas exactamente a dónde lleva. A veces lo más valiente es decir adiós para poder decirle sí a lo que viene.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1izNPyvl9IRI-xVUDzvWIPkfEvYie1TV_"
   },
   {
     "Carta":"Nueve de Copas",
-    "Name_EN":"Nine of Cups",
-    "Mensaje del día":"Hoy, el Nueve de Copas te abraza con plenitud. Deseos cumplidos, satisfacción emocional, disfrute. Permitite celebrar lo que construiste. Esta carta es un regalo. Recibilo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Nueve de Copas celebra tus deseos cumplidos. Hay plenitud, satisfacción, gozo interior. Permitite disfrutar sin culpa, reconocer lo que lograste. La abundancia emocional también se honra. Hoy respirás desde un lugar de logro profundo. Agradecé, celebrá, y compartí esa alegría con el mundo.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1CkZzKn566WvRW_uXIFij7yU3f5tUMDxf"
   },
   {
     "Carta":"Diez de Copas",
-    "Name_EN":"Ten of Cups",
-    "Mensaje del día":"El Diez de Copas bendice tu día con amor expandido. Familia, comunidad, vínculos en armonía. Hoy es un día para agradecer el amor que te rodea y fortalecer tu hogar emocional.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Diez de Copas te envuelve en un sentimiento de plenitud afectiva. Familia, amor, comunidad, contención. Lo que has construido a nivel emocional hoy se manifiesta en armonía. Este es un día para agradecer, para abrazar a quienes te rodean, para nutrir lo que te sostiene. Recordá que el amor verdadero empieza por casa: tu propia alma.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1UiE3bS5A817NMIBVXTtnmbmvc0UwKfL6"
   },
   {
     "Carta":"Sota de Copas",
-    "Name_EN":"Page of Cups",
-    "Mensaje del día":"La Sota de Copas te propone mirar el mundo con asombro. Hoy podés abrir tu sensibilidad, tu creatividad, tus sueños. Escuchá los mensajes del alma. Algo mágico quiere nacer en vos.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Sota de Copas te regala sensibilidad y arte. Hay algo tierno, nuevo, tímido queriendo expresarse en vos. Tal vez una emoción, una intuición, una inspiración que necesita canal. Permitite jugar, sentir, imaginar. Hoy el alma se comunica en lenguaje poético. Escuchá lo sutil: ahí está la magia.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1XvPU3mFmo6Ag9XNBUXBcPUlNMaFgg87T"
   },
   {
     "Carta":"Caballo de Copas",
-    "Name_EN":"Knight of Cups",
-    "Mensaje del día":"El Caballo de Copas llega con propuestas, con poesía, con romanticismo. Hoy es un buen día para expresar lo que sentís, para seducir con verdad, para entregarte al sentir sin máscaras.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Caballo de Copas te invita a moverte con el corazón por delante. Hay romanticismo, belleza y deseo de conexión sincera. Puede ser una propuesta amorosa, una charla profunda, o simplemente un gesto cargado de alma. Hoy dejá que tu sensibilidad guíe tu andar. Mostrarte vulnerable también es una forma de avanzar.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1kvTyAA9cjGO884rx9vjhy1vMtYK-S6Gb"
   },
   {
     "Carta":"Reina de Copas",
-    "Name_EN":"Queen of Cups",
-    "Mensaje del día":"La Reina de Copas te conecta con tu profundidad emocional. Hoy es un día para cuidar tu mundo interno, contener con amor, y habitar tu sensibilidad como un don sagrado.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Reina de Copas te sumerge en sabiduría emocional. Sos receptiva, empática, profunda. Podés contener, comprender, sostener desde un lugar muy auténtico. Cuidá tus límites sin dejar de ser canal. Tu intuición está elevada: confiala. Hoy tu corazón habla más claro que la mente.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1D3kO-4Ejmqc4voP1NMZITI5Bcx6QWSgX"
   },
   {
     "Carta":"Rey de Copas",
-    "Name_EN":"King of Cups",
-    "Mensaje del día":"El Rey de Copas te invita hoy a sostener emociones intensas con madurez. No se trata de negar lo que sentís, sino de navegarlo con sabiduría. Esta carta es presencia amorosa y firmeza emocional.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Rey de Copas te recuerda que la madurez emocional también es poder. Sostené desde la calma, guiá desde el equilibrio, respondé con empatía. No se trata de controlar lo que sentís, sino de ser soberano dentro de tu mundo emocional. Hoy tu presencia estable puede sanar a otros sin decir una sola palabra.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1vSsx_nLZyidmRafTImmMjkmcEUs681yz"
   },
   {
     "Carta":"As de Espadas",
-    "Name_EN":"Ace of Swords",
-    "Mensaje del día":"Hoy, el As de Espadas corta la niebla. Es un día para la verdad, para hablar claro, para decidir con lucidez. Esta carta te da filo mental. Usalo con responsabilidad.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el As de Espadas corta el velo de la confusión. Llega una verdad, una claridad que no puede ser negada. Puede doler, pero también libera. Hoy se abre un portal para ver con lucidez, para hablar con firmeza, para tomar decisiones que te alineen con tu centro.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1B4KD3eUCS69jczRp2t0bEJ5Xuf9gSWrX"
   },
   {
     "Carta":"Dos de Espadas",
-    "Name_EN":"Two of Swords",
-    "Mensaje del día":"El Dos de Espadas te plantea una encrucijada. Hoy no apures la respuesta. Escuchá tu mente, pero también tu intuición. La claridad llegará si abrís el corazón.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Dos de Espadas te enfrenta con una encrucijada interna. Dos voces, dos caminos, dos verdades. Estás buscando afuera lo que solo podés resolver en silencio. Cerrá los ojos, escuchá tu interior. La respuesta está, pero necesita tu entrega total.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1DzRWWc2Gei6ZZ8r6-F80QC0DiMGzJoh_"
   },
   {
     "Carta":"Tres de Espadas",
-    "Name_EN":"Three of Swords",
-    "Mensaje del día":"Hoy, el Tres de Espadas puede doler. Es el reconocimiento de una herida emocional. Permitite sentir, llorar, soltar. El corazón roto también se vuelve más fuerte.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Tres de Espadas te muestra el filo del dolor emocional. Una traición, una pérdida, una herida aún abierta. No lo tapes, no lo racionalices. Sentí. El corazón también sangra para sanar. Hoy el aprendizaje viene con lágrimas, pero también con liberación.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1hWPxikN1gYD---zOUVvCBkvToC2Rhi_J"
   },
   {
     "Carta":"Cuatro de Espadas",
-    "Name_EN":"Four of Swords",
-    "Mensaje del día":"El Cuatro de Espadas te invita al descanso mental. Hoy podés bajar la guardia, pausar el pensamiento, y encontrar refugio en la calma. El silencio también es medicina.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cuatro de Espadas te pide descanso, pero no uno físico: un retiro del ruido, una pausa necesaria del conflicto. Tus pensamientos están saturados. Tomate un momento para ordenar, para meditar, para simplemente respirar. En el silencio volverás a escuchar tu voz.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1mUb6rCB2wLQ0IxGPFqkSsbDIOrWdxAn0"
   },
   {
     "Carta":"Cinco de Espadas",
-    "Name_EN":"Five of Swords",
-    "Mensaje del día":"Hoy, el Cinco de Espadas te advierte sobre luchas vacías. ¿Vale la pena tener razón? Esta carta te propone soltar el orgullo y buscar caminos donde nadie pierda.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cinco de Espadas te confronta con el ego, el orgullo, la necesidad de tener razón. ¿Vale la pena ganar si perdés paz? Elegí sabiamente tus batallas. A veces la retirada no es cobardía, sino sabiduría.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1RyxmQAQQ2vH1UuqUV6DHiV2-2X9xl36W"
   },
   {
     "Carta":"Seis de Espadas",
-    "Name_EN":"Six of Swords",
-    "Mensaje del día":"El Seis de Espadas marca un pasaje. Hoy podés atravesar un proceso de sanación, alejándote de lo que te hirió. Es un viaje hacia aguas más tranquilas.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Seis de Espadas te habla de un tránsito. Tal vez estés saliendo de una etapa difícil, alejándote del dolor, buscando otro lugar donde vivir más liviano. No es fácil irse, pero sabés que no podés quedarte. Confiá en el proceso: te estás acercando a aguas más calmas.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1NOqOkQUL6BP_SJwbOFcxanV9uIwqrCjl"
   },
   {
     "Carta":"Siete de Espadas",
-    "Name_EN":"Seven of Swords",
-    "Mensaje del día":"Hoy, el Siete de Espadas te pide honestidad, especialmente con vos mismo. ¿Estás escapando, ocultando algo? Esta carta no acusa, pero sí te invita a actuar con integridad.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Siete de Espadas revela lo oculto. Secretos, evasión, desconfianza. ¿Qué parte de vos no se está mostrando del todo? Sé honesto con vos mismo. Hoy tenés la oportunidad de actuar con integridad, incluso cuando nadie te está mirando.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1sMS3mzbkhmUHcAyFP3HUFHCZgkCu1Aqk"
   },
   {
     "Carta":"Ocho de Espadas",
-    "Name_EN":"Eight of Swords",
-    "Mensaje del día":"El Ocho de Espadas te muestra tus propias cadenas mentales. Hoy podés ver que muchas limitaciones vienen de tus creencias. Liberate del autosabotaje. Hay salida.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Ocho de Espadas te muestra una prisión creada por tu mente. El miedo, la duda, la autoexigencia te tienen paralizado. Pero las cadenas son ilusorias. Hay una salida. Necesitás cambiar la forma en que te estás mirando para poder liberarte.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1GaxDYyBPVNL6H-Dk-b0Tji1Wpa-cqq3Z"
   },
   {
     "Carta":"Nueve de Espadas",
-    "Name_EN":"Nine of Swords",
-    "Mensaje del día":"Hoy, el Nueve de Espadas refleja tus miedos más profundos. No estás solo. Esta carta te abraza en la noche oscura y te recuerda que también eso va a pasar.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Nueve de Espadas te enfrenta con aquello que cargás en silencio. Preocupaciones, culpas, heridas que preferís callar, todo eso busca salir a la superficie. No huyas del dolor que aparece: es un mensajero, no un castigo. Permitite sentir, mirar de frente lo que tanto evitás, porque ahí está la clave de tu liberación. Lo que te desvela también puede despertarte. Hoy, sanás al nombrar tu verdad más cruda.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1BlZscYUEa-A8auXSxsBjMaSUCA9BXCYJ"
   },
   {
     "Carta":"Diez de Espadas",
-    "Name_EN":"Ten of Swords",
-    "Mensaje del día":"El Diez de Espadas señala un final ineludible. Algo termina, sí, pero también hay un nuevo sol asomando. Hoy es un día para rendirse a lo inevitable y abrirse al renacer.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Diez de Espadas marca un final contundente. Algo toca fondo, algo muere definitivamente. Aunque duela, es necesario. Ya no hay vuelta atrás, pero sí hay un nuevo amanecer esperándote más allá del dolor. Honrá la caída, porque te prepara para un renacer más honesto.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=15WW0O8pcJ3N-5RAOMl1TS2jVXQ1ZHYFe"
   },
   {
     "Carta":"Sota de Espadas",
-    "Name_EN":"Page of Swords",
-    "Mensaje del día":"La Sota de Espadas te impulsa a aprender, observar, cuestionar. Hoy es día para investigar, leer entre líneas y afilar tu mente sin perder empatía.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Sota de Espadas despierta tu mente inquisitiva. Preguntá, investigá, aprendé. No des nada por sentado. Este es un día para observar con atención, para cuestionar lo que antes aceptabas. Tu inteligencia es tu espada: usala con propósito.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1nUyl4bcwKdzeX1F-Hs7LygqH7AcJSGNv"
   },
   {
     "Carta":"Caballo de Espadas",
-    "Name_EN":"Knight of Swords",
-    "Mensaje del día":"El Caballo de Espadas llega con determinación y palabra filosa. Hoy podés defender tus ideas con coraje, pero cuidá no herir sin necesidad. Que tu verdad sea clara, pero también justa.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Caballo de Espadas te impulsa a actuar con rapidez. Tus ideas están listas para salir al mundo, pero cuidado con atropellar. No se trata solo de velocidad, sino de precisión. Sé claro, enfocado, directo. Tu palabra tiene fuerza: usala con responsabilidad.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1AV7dCkq-yFvxSuHG0heuPocBST29a_-Q"
   },
   {
     "Carta":"Reina de Espadas",
-    "Name_EN":"Queen of Swords",
-    "Mensaje del día":"La Reina de Espadas te invita hoy a mirar con objetividad. Esta carta es discernimiento, claridad, sabiduría que se ganó con experiencia. Hoy hablá sin adornos, pero con respeto.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Reina de Espadas te conecta con tu lucidez emocional. Sabés discernir, cortar lo que no va, decir lo que otros callan. Tu verdad no es fría, es justa. Hoy es un buen día para poner límites sanos y comunicar desde tu centro. La claridad es tu poder.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=18_9JtumAclKRgEQFUF0Yf-di2TYZ14ay"
   },
   {
     "Carta":"Rey de Espadas",
-    "Name_EN":"King of Swords",
-    "Mensaje del día":"El Rey de Espadas te propone liderar desde la mente clara. Hoy es un buen día para tomar decisiones importantes, planificar, comunicarte con autoridad sin arrogancia.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Rey de Espadas te llama a liderar con sabiduría mental. Observá todo el tablero, analizá sin apego. Tu juicio hoy puede traer orden donde hay caos. No necesitás imponerte: tu lógica y presencia ya son autoridad.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1LAgr3TS4boddF77zJgzF4-AblM17OnWt"
   },
   {
     "Carta":"As de Oros",
-    "Name_EN":"Ace of Pentacles",
-    "Mensaje del día":"Hoy, el As de Oros planta una semilla en el plano material. Es día de oportunidades concretas, de inicios fértiles en lo económico, lo físico, lo tangible. Honrá tu abundancia.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el As de Oros te regala una semilla concreta: una oportunidad en lo material, un nuevo proyecto, una idea que puede hacerse realidad. Sembrala con compromiso. Esta tierra es fértil si estás dispuesto a cultivarla.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1jxwD4jE1AptudSFE2oGi2hLplyhuMlsP"
   },
   {
     "Carta":"Dos de Oros",
-    "Name_EN":"Two of Pentacles",
-    "Mensaje del día":"El Dos de Oros te invita a equilibrar. Hoy es un buen momento para organizar tu tiempo, tus recursos, tu energía. Jugá con los ritmos sin perder el eje.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Dos de Oros te pide equilibrio en medio del movimiento. Muchas cosas están pasando a la vez, y tu habilidad para adaptarte será clave. Jugá con lo que hay, no pierdas el eje. Hoy la flexibilidad es tu aliada.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1eo8U3Kt-8Jeu9JaeZ4LEozgWQHmATe_F"
   },
   {
     "Carta":"Tres de Oros",
-    "Name_EN":"Three of Pentacles",
-    "Mensaje del día":"Hoy, el Tres de Oros te propone construir en equipo. Esta carta habla de colaboración, de proyectos compartidos, de crecer en red. Confiá en los otros. No estás solo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Tres de Oros te recuerda que construir algo sólido requiere colaboración. Escuchá otras voces, compartí tu visión, reconocé los talentos de quienes te rodean. Lo que se hace en conjunto se enraíza más fuerte.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=12yNEM6xJ6305-5h90bSwrCOqh5E4TJtO"
   },
   {
     "Carta":"Cuatro de Oros",
-    "Name_EN":"Four of Pentacles",
-    "Mensaje del día":"El Cuatro de Oros te recuerda que aferrarte demasiado puede bloquearte. Hoy revisá tus apegos materiales. Confiar en la vida también es soltar el control.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cuatro de Oros te invita a revisar tu relación con la seguridad. ¿Estás sosteniendo o reteniendo? El miedo a perder puede cerrar el flujo. Hoy soltá un poco el control y confiá en la abundancia que fluye cuando hay apertura.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1nCM2ihJ-BGxXzTBKj-YKy7jtN-YA5EHC"
   },
   {
     "Carta":"Cinco de Oros",
-    "Name_EN":"Five of Pentacles",
-    "Mensaje del día":"Hoy, el Cinco de Oros habla de carencia, de sentirte fuera. Pero también te recuerda que hay ayuda disponible. Mirá alrededor: hay calor si te animás a pedirlo.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Cinco de Oros toca tu herida de carencia. Puede ser económica, emocional o espiritual. Sentí lo que te falta sin identificarte con eso. Pedí ayuda si la necesitás. No estás solo: hay calor más cerca de lo que pensás.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1R6gJJYvYdXp281LUsOZ2dQMTl2Ho63VE"
   },
   {
     "Carta":"Seis de Oros",
-    "Name_EN":"Six of Pentacles",
-    "Mensaje del día":"El Seis de Oros te invita a dar y recibir con equilibrio. Hoy es día de practicar la generosidad justa, de compartir sin sobrecargarte, y de aceptar con gratitud lo que llega.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Seis de Oros te enseña el equilibrio entre dar y recibir. Tal vez te toque compartir desde tu abundancia, o aceptar lo que otro quiere ofrecerte. No es limosna: es intercambio sagrado. Hoy todo lo que circula, bendice.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1Bt8rErfAUsvMesJqLIT02URqVdxc33-O"
   },
   {
     "Carta":"Siete de Oros",
-    "Name_EN":"Seven of Pentacles",
-    "Mensaje del día":"Hoy, el Siete de Oros es paciencia. Estás sembrando, y aunque aún no veas los frutos, todo está creciendo. Esta carta te pide confiar en los tiempos de la vida.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Siete de Oros te pide paciencia. Estás en una etapa de maduración, donde lo importante está creciendo aunque no lo veas aún. No abandones, no arranques lo que todavía no floreció. Hoy es día de confiar en el proceso.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1GZ4AWgDX0dJrx767OV1kikay34TxBSvy"
   },
   {
     "Carta":"Ocho de Oros",
-    "Name_EN":"Eight of Pentacles",
-    "Mensaje del día":"El Ocho de Oros te impulsa hoy al trabajo comprometido. Perfeccioná tu arte, aprendé, poné amor en cada detalle. El camino al dominio se recorre paso a paso.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Ocho de Oros honra tu dedicación. Estás perfeccionando algo, puliendo tu arte, construyendo con detalle. El camino del maestro se hace con práctica constante. Hoy el trabajo se vuelve oración.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1YJ9T_UqBktqtsnzvr1ZtU7dVUy7YCMcB"
   },
   {
     "Carta":"Nueve de Oros",
-    "Name_EN":"Nine of Pentacles",
-    "Mensaje del día":"Hoy, el Nueve de Oros celebra tu independencia, tu disfrute, tu cosecha. Esta carta es satisfacción merecida. Permitite gozar lo que construiste.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Nueve de Oros te invita a disfrutar lo que lograste. Independencia, belleza, comodidad: todo eso está bien ganado. Permitite gozar sin culpa, sabiendo que este momento también es parte del camino espiritual.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1I5i3ANf6GDexnEXJDQqflqDh68NIKFGx"
   },
   {
     "Carta":"Diez de Oros",
-    "Name_EN":"Ten of Pentacles",
-    "Mensaje del día":"El Diez de Oros te conecta hoy con el legado, la familia, la estabilidad a largo plazo. Hoy podés honrar tus raíces y proyectarte con solidez hacia el futuro.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Diez de Oros celebra la abundancia construida en comunidad. Familias, clanes, legado. Pensá más allá de vos. ¿Qué estás dejando? ¿Qué estás sosteniendo? Hoy se abre la posibilidad de honrar lo que se construye entre muchos.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1rWRAmxORLtMAGc7b7znsm-LqIX8q3vom"
   },
   {
     "Carta":"Sota de Oros",
-    "Name_EN":"Page of Pentacles",
-    "Mensaje del día":"La Sota de Oros te inspira a aprender sobre lo material. Hoy es día para invertir en tu crecimiento, estudiar, comenzar algo nuevo que traiga frutos.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Sota de Oros despierta tu curiosidad por lo tangible. Nuevas ideas, estudios, herramientas que querés dominar. Estás sembrando el futuro con cada aprendizaje. Hoy es un buen día para comprometerte con tu crecimiento concreto.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1jdpElfPsLg8gY2sxoFFjwXsJ9TNcvShz"
   },
   {
     "Carta":"Caballo de Oros",
-    "Name_EN":"Knight of Pentacles",
-    "Mensaje del día":"El Caballo de Oros te recuerda que el avance lento pero constante construye imperios. Hoy es día de responsabilidad, compromiso y esfuerzo sostenido.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Caballo de Oros avanza con paso firme. Tal vez lento, pero seguro. No estás improvisando: estás construyendo algo duradero. Hoy la constancia vale más que la urgencia. Seguí, aunque no veas resultados inmediatos.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1ccdsUC6t0R3E4eEi4PB2EMIprbZPNWiX"
   },
   {
     "Carta":"Reina de Oros",
-    "Name_EN":"Queen of Pentacles",
-    "Mensaje del día":"La Reina de Oros te invita a cuidar tu entorno, tu cuerpo, tus recursos. Hoy podés habitar tu abundancia con placer y ternura. Sos fuente de nutrición.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, la Reina de Oros te invita a cuidar tu cuerpo, tu hogar, tu mundo material con amor. Ella transforma en sagrado lo cotidiano. Hoy prepará una comida con conciencia, tocá la tierra, abrazá el presente. Lo simple es lo más real.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1DoKHrUO1n3sutE8XT3ruzrJGtMu-ikbB"
   },
   {
     "Carta":"Rey de Oros",
-    "Name_EN":"King of Pentacles",
-    "Mensaje del día":"El Rey de Oros te propone liderar desde la seguridad interna. Hoy es día para consolidar, para valorar lo construido, y para compartir tu riqueza con sabiduría.",
-    "Deck":"Requiem Arcana",
+    "Mensaje del día":"Hoy, el Rey de Oros te muestra cómo sostener tu vida con sabiduría. Has aprendido a administrar, a construir, a proteger. Hoy podés guiar a otros desde tu experiencia. Tu estabilidad es medicina. Compartila desde el corazón.",
     "Animation_URL":"https:\/\/drive.google.com\/uc?export=preview&id=1mEgT48cK9LW1GEu1VR033o3pCqjzSY9D"
   }
 ]
