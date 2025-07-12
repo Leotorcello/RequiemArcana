@@ -56,17 +56,16 @@
   </div>
 
   <script>
-    async function getCartaDelDia() {
+    async function getCartaRandom() {
       const res = await fetch('data.json');
       const data = await res.json();
-      const hoy = new Date().toISOString().split('T')[0];
-      const hash = [...hoy].reduce((a,c) => a + c.charCodeAt(0), 0);
-      return data[hash % data.length];
+      const randomIndex = Math.floor(Math.random() * data.length);
+      return data[randomIndex];
     }
 
     function revelarCarta() {
       document.querySelector("button").style.display = "none";
-      getCartaDelDia().then(carta => {
+      getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
         document.getElementById("mensaje").innerText = carta["Mensaje del día"];
         const video = document.getElementById("animacion");
