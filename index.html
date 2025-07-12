@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,13 +27,19 @@
       display: none;
       animation: fadeIn 2s ease-in-out forwards;
     }
-    video {
+    .video-container {
       width: 300px;
       height: 500px;
-      max-width: 90vw;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
       border-radius: 20px;
-      border: none;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -66,7 +71,9 @@
   <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
     <h2 id="tituloCarta"></h2>
-    <video id="animacion" autoplay muted loop playsinline controls></video>
+    <div class="video-container">
+      <iframe id="animacion" allow="autoplay"></iframe>
+    </div>
     <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
   </div>
   <footer>Apu Walla - Leo Torcello</footer>
@@ -79,14 +86,26 @@
       return data[randomIndex];
     }
 
+    function extractVideoId(url) {
+      // Extrae el ID tanto de enlaces con 'export=download&id=' como 'file/d/'
+      const match = url.match(/(?:export=download&id=|file\/d\/)([^\/\?]+)/);
+      return match ? match[1] : null;
+    }
+
     function revelarCarta() {
       document.querySelector("button").style.display = "none";
       getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
         document.getElementById("mensaje").innerText = carta["Mensaje del día"];
-        const video = document.getElementById("animacion");
-        video.src = carta.Animation_URL;
-        video.load();
+        
+        const videoId = extractVideoId(carta.Animation_URL);
+        if (videoId) {
+          const iframe = document.getElementById("animacion");
+          iframe.src = `https://drive.google.com/file/d/${videoId}/preview?autoplay=1`;
+        } else {
+          console.error("No se pudo extraer el ID del video");
+        }
+        
         document.getElementById("card").style.display = "block";
       });
     }
@@ -94,7 +113,12 @@
     window.onload = function () {
       const fecha = new Date();
       document.getElementById("fecha").innerText = "Tu carta para hoy, " +
-        fecha.toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
+        fecha.toLocaleDateString("es-AR", { 
+          weekday: 'long', 
+          year: 'numeric', 
+          month: 'long', 
+          day: 'numeric' 
+        });
     };
   </script>
 </body>
