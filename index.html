@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Requiem Arcana - Carta del Día</title>
+  <title>Carta del Día</title>
   <style>
     body {
       background: url('background.jpg') no-repeat center center fixed;
@@ -11,10 +11,20 @@
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px 80px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-top: auto;
+      font-size: 2.5em;
+    }
+    #fecha {
+      margin-bottom: 30px;
     }
     .card {
-      margin-top: 30px;
       display: none;
       animation: fadeIn 2s ease-in-out forwards;
     }
@@ -38,15 +48,20 @@
       background: #444;
       color: white;
       cursor: pointer;
-      margin-top: 20px;
+      margin-bottom: 30px;
     }
     button:hover {
       background: #666;
     }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <h1>Requiem Arcana - Carta del Día</h1>
+  <h1>Carta del Día</h1>
   <p id="fecha"></p>
   <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
@@ -54,6 +69,7 @@
     <video id="animacion" autoplay muted loop playsinline controls></video>
     <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
   </div>
+  <footer>Apu Walla - Leo Torcello</footer>
 
   <script>
     async function getCartaRandom() {
