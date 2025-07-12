@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Carta del Día</title>
   <style>
     body {
@@ -16,263 +16,84 @@
       flex-direction: column;
       justify-content: flex-end;
       min-height: 100vh;
-      margin: 0;
     }
     h1 {
       margin-top: auto;
       font-size: 2.5em;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     #fecha {
       margin-bottom: 30px;
-      font-size: 1.2em;
     }
     .card {
       display: none;
-      animation: fadeIn 1.5s ease-out forwards;
-    }
-    .video-container {
-      width: 300px;
-      height: 500px;
-      margin: 20px auto;
-      position: relative;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-      background: #000;
-    }
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
+      animation: fadeIn 2s ease-in-out forwards;
     }
     iframe {
-      width: 100%;
-      height: 100%;
+      width: 300px;
+      height: 500px;
+      max-width: 90vw;
+      border-radius: 20px;
       border: none;
-      display: block;
-    }
-    .loader {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: 5px solid rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      border-top: 5px solid #fff;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-      z-index: 10;
-    }
-    .fallback-message {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 80%;
-    }
-    button {
-      padding: 15px 30px;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 50px;
-      background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
-      color: white;
-      cursor: pointer;
-      margin: 20px auto;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-    }
-    button:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
-    }
-    button:disabled {
-      background: #666;
-      cursor: not-allowed;
-      transform: none;
-    }
-    #mensaje {
-      max-width: 700px;
-      margin: 30px auto;
-      line-height: 1.6;
-      font-size: 1.1em;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    @keyframes spin {
-      0% { transform: translate(-50%, -50%) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+    button:hover {
+      background: #666;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
   <h1>Carta del Día</h1>
   <p id="fecha"></p>
-  <button id="reveal-btn" onclick="revelarCarta()">🔮 REVELAR CARTA</button>
-  
+  <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
     <h2 id="tituloCarta"></h2>
-    <div class="video-container">
-      <div class="video-wrapper">
-        <div class="loader" id="loader"></div>
-        <div class="fallback-message" id="fallback">
-          El video no puede cargarse. <a href="#" onclick="reintentarCarga()">Reintentar</a> o 
-          <a href="#" id="download-link" target="_blank">Descargar video</a>
-        </div>
-        <iframe 
-          id="animacion" 
-          allow="autoplay; fullscreen" 
-          allowfullscreen
-          onload="videoCargado()"
-          onerror="videoError()"
-        ></iframe>
-      </div>
-    </div>
-    <p id="mensaje"></p>
+    <iframe id="animacion" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
   </div>
-  
   <footer>Apu Walla - Leo Torcello</footer>
 
   <script>
-    // Variables globales
-    let currentVideoUrl = '';
-    const RETRY_DELAY = 3000; // 3 segundos entre reintentos
-    const MAX_RETRIES = 3;
-    let retryCount = 0;
-
-    // Elementos del DOM
-    const loader = document.getElementById('loader');
-    const fallback = document.getElementById('fallback');
-    const iframe = document.getElementById('animacion');
-    const downloadLink = document.getElementById('download-link');
-    const revealBtn = document.getElementById('reveal-btn');
-
-    // Función principal
-    async function revelarCarta() {
-      revealBtn.disabled = true;
-      revealBtn.textContent = 'CARGANDO...';
-      
-      mostrarLoader();
-      resetVideoPlayer();
-      
-      try {
-        const carta = await getCartaRandom();
-        mostrarContenidoCarta(carta);
-        
-        const videoId = extraerIdVideo(carta.Animation_URL);
-        if (videoId) {
-          currentVideoUrl = `https://drive.google.com/file/d/${videoId}/preview?autoplay=1&mute=1&modestbranding=1`;
-          downloadLink.href = `https://drive.google.com/uc?export=download&id=${videoId}`;
-          cargarVideo(currentVideoUrl);
-        } else {
-          throw new Error('ID de video no válido');
-        }
-      } catch (error) {
-        console.error('Error:', error);
-        manejarError();
-      }
-    }
-
-    // Funciones auxiliares
     async function getCartaRandom() {
-      const response = await fetch('data.json');
-      if (!response.ok) throw new Error('Error al cargar datos');
-      const data = await response.json();
-      return data[Math.floor(Math.random() * data.length)];
+      const res = await fetch('data.json');
+      const data = await res.json();
+      const randomIndex = Math.floor(Math.random() * data.length);
+      return data[randomIndex];
     }
 
-    function extraerIdVideo(url) {
-      const regex = /(?:drive\.google\.com\/file\/d\/|id=)([\w-]+)/;
-      const match = url.match(regex);
-      return match ? match[1] : null;
-    }
-
-    function cargarVideo(url) {
-      iframe.src = url;
-      iframe.style.display = 'block';
-      fallback.style.display = 'none';
-      
-      // Timeout por si el video no carga
-      setTimeout(() => {
-        if (iframe.style.display === 'block' && !iframe.contentWindow) {
-          videoError();
-        }
-      }, 10000);
-    }
-
-    function mostrarContenidoCarta(carta) {
-      document.getElementById('tituloCarta').textContent = carta.Carta;
-      document.getElementById('mensaje').textContent = carta['Mensaje del día'];
-      document.getElementById('card').style.display = 'block';
-    }
-
-    function resetVideoPlayer() {
-      iframe.src = '';
-      iframe.style.display = 'none';
-      fallback.style.display = 'none';
-    }
-
-    function mostrarLoader() {
-      loader.style.display = 'block';
-    }
-
-    function ocultarLoader() {
-      loader.style.display = 'none';
-    }
-
-    function videoCargado() {
-      ocultarLoader();
-      revealBtn.style.display = 'none';
-      retryCount = 0;
-    }
-
-    function videoError() {
-      if (retryCount < MAX_RETRIES) {
-        retryCount++;
-        setTimeout(() => cargarVideo(currentVideoUrl), RETRY_DELAY);
-      } else {
-        mostrarFallback();
-      }
-    }
-
-    function mostrarFallback() {
-      ocultarLoader();
-      iframe.style.display = 'none';
-      fallback.style.display = 'block';
-      revealBtn.style.display = 'block';
-      revealBtn.disabled = false;
-      revealBtn.textContent = '🔮 REVELAR CARTA';
-    }
-
-    function reintentarCarga() {
-      event.preventDefault();
-      revelarCarta();
-    }
-
-    // Inicialización
-    window.onload = function() {
-      const fecha = new Date();
-      document.getElementById('fecha').textContent = fecha.toLocaleDateString('es-AR', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
+    function revelarCarta() {
+      document.querySelector("button").style.display = "none";
+      getCartaRandom().then(carta => {
+        document.getElementById("tituloCarta").innerText = carta.Carta;
+        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
+        const iframe = document.getElementById("animacion");
+        iframe.src = carta.Animation_URL;
+        document.getElementById("card").style.display = "block";
       });
+    }
+
+    window.onload = function () {
+      const fecha = new Date();
+      document.getElementById("fecha").innerText = "Tu carta para hoy, " +
+        fecha.toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
     };
   </script>
 </body>
