@@ -119,6 +119,8 @@
     }
 
     function revelarCarta() {
+      document.querySelector("h1").style.display = "none";
+      document.getElementById("fecha").style.display = "none";
       document.querySelector("button").style.display = "none";
       getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
