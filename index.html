@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta del Día</title>
   <style>
+    /* Estructura base (igual a tu original) */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
     }
-    /* Fondo de imagen */
-    body {
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-    }
-    /* Contenedor de partículas (sobre el fondo pero bajo el contenido) */
+
+    /* Partículas - Ajustadas para tu fondo */
     #particles-js {
       position: fixed;
       width: 100%;
@@ -27,14 +26,17 @@
       left: 0;
       z-index: 0;
       pointer-events: none;
+      background-color: transparent;
     }
-    /* Contenido principal */
+
+    /* Contenido (conserva tu estructura original) */
     main {
       position: relative;
       z-index: 1;
       padding: 20px;
     }
-    /* Tus estilos originales (conservados) */
+
+    /* Tus estilos originales (conservados tal cual) */
     button {
       padding: 14px 32px;
       font-size: 18px;
@@ -98,10 +100,10 @@
   </style>
 </head>
 <body>
-  <!-- Partículas (capa intermedia) -->
+  <!-- Capa de partículas (nuevo) -->
   <div id="particles-js"></div>
-  
-  <!-- Contenido original (igual a tu versión) -->
+
+  <!-- Todo tu contenido original (sin cambios) -->
   <main>
     <h1>Tu carta del día</h1>
     <p id="fecha"></p>
@@ -114,44 +116,49 @@
     <footer>by Apu Walla – Leo Torcello</footer>
   </main>
 
-  <!-- Script de partículas (versión optimizada) -->
+  <!-- Script de partículas (configuración optimizada para tu fondo) -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
   <script>
     tsParticles.load("particles-js", {
       fullScreen: false,
       particles: {
         number: { 
-          value: 80,
+          value: 70,
           density: {
             enable: true,
             value_area: 800
           }
         },
         color: { 
-          value: "#FFD700" // Dorado para contraste
+          value: "#FFD700" // Dorado - Cambia a "#FFFFFF" si prefieres blanco
         },
         opacity: {
-          value: 0.7, // Más visibles
-          random: true
+          value: 0.5,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0.1
+          }
         },
         size: {
-          value: 3,
+          value: 2.5,
           random: true
         },
         move: {
           enable: true,
-          speed: 0.5,
+          speed: 0.3,
           direction: "none",
-          outModes: "bounce"
+          outModes: "out"
         }
       },
       background: {
-        color: "transparent" // Permite ver tu imagen de fondo
+        color: "transparent" // ¡Importante! Para no tapar tu imagen
       }
     });
   </script>
 
-  <!-- Tu script original (sin cambios) -->
+  <!-- Tu script original (COMPLETO sin cambios) -->
   <script>
     const arcanosMayores = [
       "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador", "El Hierofante", "Los Enamorados",
