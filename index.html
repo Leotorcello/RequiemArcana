@@ -66,6 +66,19 @@
       font-size: 0.9em;
       color: #aaa;
     }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    main {
+      position: relative;
+      z-index: 1;
+    }
     @media (max-width: 600px) {
       body {
         background: url('background2.jpg') no-repeat center center fixed;
@@ -88,18 +101,6 @@
         font-size: 0.95em;
       }
     }
-    #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-    main {
-      position: relative;
-      z-index: 1;
-    }
   </style>
 </head>
 <body>
@@ -121,11 +122,11 @@
     tsParticles.load("particles-js", {
       fullScreen: { enable: true, zIndex: 0 },
       particles: {
-        number: { value: 60 },
-        color: { value: "#ffffff" },
+        number: { value: 80 },
+        color: { value: "#FFD700" },
         opacity: {
-          value: 0.3,
-          random: true,
+          value: 0.4,
+          random: true
         },
         size: {
           value: 2,
@@ -133,7 +134,7 @@
         },
         move: {
           enable: true,
-          speed: 0.3,
+          speed: 0.6,
           direction: "top",
           outModes: { default: "out" }
         }
