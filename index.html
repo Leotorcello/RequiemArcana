@@ -3,69 +3,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carta del Día</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Requiem Arcana - Carta del Día</title>
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       background: url('background.jpg') no-repeat center center fixed;
-      background-color: #000;
       background-size: cover;
-      color: #fff;
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 20px;
-      min-height: 100vh;
-    }
-    h1 {
-      margin-top: 10px;
-      font-size: 2.2em;
-    }
-    #fecha {
-      margin-bottom: 20px;
-      font-size: 1em;
-    }
-    .card {
-      display: none;
-    }
-    iframe {
-      border-radius: 20px;
-      border: none;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      max-width: 100%;
-      margin: 0 auto;
-    }
-    .iframe-vertical {
-      width: 300px;
-      height: 500px;
-    }
-    .iframe-horizontal {
-      width: 560px;
-      height: 315px;
-    }
-    #mensaje {
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 0 10px;
-    }
-    button {
-      padding: 14px 32px;
-      font-size: 18px;
-      border: none;
-      border-radius: 12px;
-      background: #444;
       color: white;
-      cursor: pointer;
-      margin-bottom: 30px;
-      transition: background 0.3s ease;
+      text-align: center;
+      overflow-x: hidden;
     }
-    button:hover {
-      background: #666;
-    }
-    footer {
-      margin-top: 30px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
+
     #particles-js {
       position: fixed;
       width: 100%;
@@ -75,119 +27,80 @@
       z-index: 0;
       pointer-events: none;
     }
+
     main {
       position: relative;
       z-index: 1;
+      padding-top: 100px;
     }
-    @media (max-width: 600px) {
-      body {
-        background: url('background2.jpg') no-repeat center center fixed;
-        background-size: cover;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-      .iframe-vertical {
-        width: 100%;
-        aspect-ratio: 9/16;
-        height: auto;
-      }
-      .iframe-horizontal {
-        width: 100%;
-        aspect-ratio: 16/9;
-        height: auto;
-      }
-      #mensaje {
-        font-size: 0.95em;
-      }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    .video-container {
+      margin-top: 40px;
+    }
+
+    iframe {
+      border: none;
+      width: 90%;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #ffd70088;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 40px auto 0;
+      font-size: 1.1em;
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
   <div id="particles-js"></div>
+
   <main>
     <h1>Tu carta del día</h1>
-    <p id="fecha"></p>
-    <button onclick="revelarCarta()">🔮 REVELAR</button>
-    <div class="card" id="card">
-      <h2 id="tituloCarta"></h2>
-      <iframe id="animacion" class="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      <p id="mensaje"></p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/cHOYIJfEMxQ?autoplay=1&loop=1&mute=1&controls=0&modestbranding=1&playlist=cHOYIJfEMxQ"
+              allowfullscreen allow="autoplay"></iframe>
     </div>
-    <footer>by Apu Walla – Leo Torcello</footer>
+    <p>Hoy, El Loco te invita a lanzarte a lo desconocido con confianza y sin miedo. Es un buen día para soltar estructuras y confiar en el proceso de la vida.</p>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
   <script>
     tsParticles.load("particles-js", {
-      fullScreen: { enable: true, zIndex: 0 },
+      fullScreen: false,
       particles: {
-        number: { value: 80 },
+        number: { value: 60 },
         color: { value: "#FFD700" },
+        shape: { type: "circle" },
         opacity: {
           value: 0.4,
           random: true
         },
         size: {
           value: 2,
-          random: true
+          random: { enable: true, minimumValue: 1 }
         },
         move: {
           enable: true,
-          speed: 0.6,
+          speed: 0.3,
           direction: "top",
+          straight: false,
           outModes: { default: "out" }
         }
       },
+      interactivity: {
+        events: { onHover: { enable: false } },
+        modes: {}
+      },
       background: { color: "transparent" }
     });
-  </script>
-
-  <script>
-    const arcanosMayores = [
-      "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador", "El Hierofante", "Los Enamorados",
-      "El Carro", "La Fuerza", "El Ermitaño", "La Rueda de la Fortuna", "La Justicia", "El Colgado", "La Muerte",
-      "La Templanza", "El Diablo", "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
-    ];
-
-    async function getCartaRandom() {
-      const res = await fetch('data.json');
-      const data = await res.json();
-      const randomIndex = Math.floor(Math.random() * data.length);
-      return data[randomIndex];
-    }
-
-    function revelarCarta() {
-      document.querySelector("button").style.display = "none";
-      document.querySelector("h1").style.display = "none";
-      document.getElementById("fecha").style.display = "none";
-
-      getCartaRandom().then(carta => {
-        document.getElementById("tituloCarta").innerText = carta.Carta;
-        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
-        const iframe = document.getElementById("animacion");
-        const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
-        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
-        iframe.classList.remove("iframe-vertical", "iframe-horizontal");
-
-        if (arcanosMayores.includes(carta.Carta)) {
-          iframe.classList.add("iframe-horizontal");
-        } else {
-          iframe.classList.add("iframe-vertical");
-          setTimeout(() => {
-            window.scrollBy({ top: 100, behavior: 'smooth' });
-          }, 1800);
-        }
-
-        document.getElementById("card").style.display = "block";
-      });
-    }
-
-    window.onload = function () {
-      const fecha = new Date();
-      document.getElementById("fecha").innerText = "Tu carta para hoy, " +
-        fecha.toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
-    };
   </script>
 </body>
 </html>
