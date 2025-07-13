@@ -7,22 +7,29 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f1ff;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
             text-align: center;
             padding: 20px;
-            color: #333;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
         }
         .carta-container {
             max-width: 300px;
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
         }
         h1 {
             color: #6a1b9a;
             font-size: 24px;
+            margin-bottom: 5px;
         }
         h2 {
             color: #8e24aa;
@@ -31,10 +38,11 @@
         }
         .video-container {
             width: 100%;
-            aspect-ratio: 9/16; /* Formato vertical para Shorts */
+            aspect-ratio: 9/16;
             margin: 15px 0;
-            border-radius: 8px;
+            border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         iframe {
             width: 100%;
@@ -45,6 +53,10 @@
             font-style: italic;
             line-height: 1.5;
             margin-top: 15px;
+            color: #333;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 12px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -66,11 +78,10 @@
     </div>
 
     <script>
-        // Carga los datos del JSON (asegúrate de tener data.json en la misma carpeta)
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-                const carta = data.find(item => item.Carta === "Seis de Oros"); // Cambia según la carta del día
+                const carta = data.find(item => item.Carta === "Seis de Oros"); // Cambia por la carta deseada
                 if (carta) {
                     document.getElementById('carta-titulo').textContent = carta.Carta;
                     document.getElementById('carta-mensaje').textContent = carta['Mensaje del día'];
