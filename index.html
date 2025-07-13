@@ -6,21 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta del Día</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+    body {
       background: url('background.jpg') no-repeat center center fixed;
-      background-color: transparent;
+      background-color: #000;
       background-size: cover;
+      color: #fff;
       font-family: 'Segoe UI', sans-serif;
-      color: white;
       text-align: center;
-    }
-    main {
-      position: relative;
-      z-index: 1;
       padding: 20px;
+      min-height: 100vh;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 2.2em;
+    }
+    #fecha {
+      margin-bottom: 20px;
+      font-size: 1em;
+    }
+    .card {
+      display: none;
+    }
+    iframe {
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .iframe-vertical {
+      width: 300px;
+      height: 500px;
+    }
+    .iframe-horizontal {
+      width: 560px;
+      height: 315px;
+    }
+    #mensaje {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 10px;
     }
     button {
       padding: 14px 32px;
@@ -36,37 +61,18 @@
     button:hover {
       background: #666;
     }
-    .card {
-      display: none;
-    }
-    iframe {
-      border: none;
-      border-radius: 12px;
-      max-width: 100%;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
-    }
-    .iframe-vertical {
-      width: 300px;
-      height: 500px;
-    }
-    .iframe-horizontal {
-      width: 560px;
-      height: 315px;
-    }
     footer {
       margin-top: 30px;
       font-size: 0.9em;
       color: #aaa;
     }
-    #mensaje {
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 0 10px;
-    }
     @media (max-width: 600px) {
       body {
         background: url('background2.jpg') no-repeat center center fixed;
         background-size: cover;
+      }
+      h1 {
+        font-size: 1.8em;
       }
       .iframe-vertical {
         width: 100%;
@@ -82,20 +88,73 @@
         font-size: 0.95em;
       }
     }
-  </style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    main {
+      position: relative;
+      z-index: 1;
+    }
+  
+    #logo-mobile {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      #logo-mobile {
+        display: block;
+        margin: 100px auto 0 auto;
+        max-width: 320px;
+        opacity: 0.6;
+      }
+    }
+    </style>
 </head>
 <body>
+  <div id="particles-js"></div>
   <main>
     <h1>Tu carta del día</h1>
     <p id="fecha"></p>
-    <button id="revelarBtn" onclick="revelarCarta()">🔮 REVELAR</button>
+    <button onclick="revelarCarta()">🔮 REVELAR</button>
     <div class="card" id="card">
       <h2 id="tituloCarta"></h2>
-      <iframe id="animacion" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe id="animacion" class="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <p id="mensaje"></p>
     </div>
     <footer>by Apu Walla – Leo Torcello</footer>
+    <img src="logo.png" id="logo-mobile" alt="logo" />
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("particles-js", {
+      fullScreen: { enable: true, zIndex: 0 },
+      particles: {
+        number: { value: 60 },
+        color: { value: "#ffffff" },
+        opacity: {
+          value: 0.3,
+          random: true,
+        },
+        size: {
+          value: 2,
+          random: true
+        },
+        move: {
+          enable: true,
+          speed: 0.3,
+          direction: "top",
+          outModes: { default: "out" }
+        }
+      },
+      background: { color: "transparent" }
+    });
+  </script>
 
   <script>
     const arcanosMayores = [
@@ -112,17 +171,7 @@
     }
 
     function revelarCarta() {
-      const hoy = new Date().toLocaleDateString("es-AR");
-      const yaMostrada = localStorage.getItem("cartaMostradaFecha");
-
-      if (yaMostrada === hoy) {
-        alert("Ya recibiste tu carta del día. Volvé mañana 🌞");
-        return;
-      }
-
-      localStorage.setItem("cartaMostradaFecha", hoy);
-
-      document.getElementById("revelarBtn").style.display = "none";
+      document.querySelector("button").style.display = "none";
       document.querySelector("h1").style.display = "none";
       document.getElementById("fecha").style.display = "none";
 
