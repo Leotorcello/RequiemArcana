@@ -1,0 +1,54 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f4ff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #6a1b9a;
+}
+
+/* Grid de cartas */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.tarot-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del video (ajustado para Shorts verticales) */
+.video-container {
+    width: 100%;
+    aspect-ratio: 9/16;  /* Relación vertical 9:16 */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Mensaje de la carta */
+.message {
+    background-color: #f3e5f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
