@@ -85,7 +85,8 @@
         document.getElementById("tituloCarta").innerText = carta.Carta;
         document.getElementById("mensaje").innerText = carta["Mensaje del día"];
         const iframe = document.getElementById("animacion");
-        iframe.src = carta.Animation_URL;
+        const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
+        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
         document.getElementById("card").style.display = "block";
       });
     }
