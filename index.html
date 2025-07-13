@@ -146,6 +146,19 @@
       justify-content: center;
       align-items: center;
     }
+    
+    #logo-mobile {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      #logo-mobile {
+        display: block;
+        margin: 20px auto 0 auto;
+        max-width: 100px;
+        opacity: 0.6;
+      }
+    }
     </style>
 </head>
 <body>
@@ -162,6 +175,8 @@
     <p id="mensaje"></p>
   </div>
   <footer>by Apu Walla – Leo Torcello</footer>
+  <img src="logo.png" id="logo-mobile" alt="logo" />
+
 
   <script>
     const arcanosMayores = [
@@ -180,6 +195,7 @@
     function revelarCarta() {
       document.querySelector("button").style.display = "none";
       document.querySelector("h1").style.display = "none";
+      document.getElementById("logo-mobile").style.display = "none";
       document.getElementById("fecha").style.display = "none";
       getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
