@@ -3,6 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta del Día</title>
   <style>
     body {
@@ -19,10 +20,11 @@
     }
     h1 {
       margin-top: 10px;
-      font-size: 2.5em;
+      font-size: 2.2em;
     }
     #fecha {
       margin-bottom: 20px;
+      font-size: 1em;
     }
     .card {
       display: none;
@@ -32,7 +34,8 @@
       border-radius: 20px;
       border: none;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      max-width: 90vw;
+      max-width: 100%;
+      margin: 0 auto;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -51,10 +54,29 @@
     button:hover {
       background: #666;
     }
+    #mensaje {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
     footer {
       margin-top: 30px;
       font-size: 0.9em;
       color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8em;
+      }
+      iframe {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 9/16;
+      }
+      #mensaje {
+        font-size: 0.95em;
+      }
     }
   </style>
 </head>
@@ -65,7 +87,7 @@
   <div class="card" id="card">
     <h2 id="tituloCarta"></h2>
     <iframe id="animacion" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
+    <p id="mensaje"></p>
   </div>
   <footer>by Apu Walla – Leo Torcello</footer>
 
@@ -92,13 +114,17 @@
         const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
         iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
 
-        // Ajuste de tamaño
-        if (arcanosMayores.includes(carta.Carta)) {
-          iframe.width = "560";
-          iframe.height = "315"; // 16:9
+        if (window.innerWidth > 600) {
+          if (arcanosMayores.includes(carta.Carta)) {
+            iframe.width = "560";
+            iframe.height = "315"; // horizontal
+          } else {
+            iframe.width = "300";
+            iframe.height = "500"; // vertical
+          }
         } else {
-          iframe.width = "300";
-          iframe.height = "500"; // vertical
+          iframe.removeAttribute("width");
+          iframe.removeAttribute("height");
         }
 
         document.getElementById("card").style.display = "block";
