@@ -6,46 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta del Día</title>
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       background: url('background.jpg') no-repeat center center fixed;
-      background-color: #000;
+      background-color: transparent;
       background-size: cover;
-      color: #fff;
       font-family: 'Segoe UI', sans-serif;
+      color: white;
       text-align: center;
+    }
+    main {
+      position: relative;
+      z-index: 1;
       padding: 20px;
-      min-height: 100vh;
-    }
-    h1 {
-      margin-top: 10px;
-      font-size: 2.2em;
-    }
-    #fecha {
-      margin-bottom: 20px;
-      font-size: 1em;
-    }
-    .card {
-      display: none;
-    }
-    iframe {
-      border-radius: 20px;
-      border: none;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      max-width: 100%;
-      margin: 0 auto;
-    }
-    .iframe-vertical {
-      width: 300px;
-      height: 500px;
-    }
-    .iframe-horizontal {
-      width: 560px;
-      height: 315px;
-    }
-    #mensaje {
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 0 10px;
     }
     button {
       padding: 14px 32px;
@@ -61,18 +36,40 @@
     button:hover {
       background: #666;
     }
+    .card {
+      display: none;
+    }
+    iframe {
+      border: none;
+      border-radius: 12px;
+      max-width: 100%;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+    }
+    .iframe-vertical {
+      width: 300px;
+      height: 500px;
+    }
+    .iframe-horizontal {
+      width: 560px;
+      height: 315px;
+    }
     footer {
       margin-top: 30px;
       font-size: 0.9em;
       color: #aaa;
     }
+    #mensaje {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
+    #logo-mobile {
+      display: none;
+    }
     @media (max-width: 600px) {
       body {
         background: url('background2.jpg') no-repeat center center fixed;
         background-size: cover;
-      }
-      h1 {
-        font-size: 1.8em;
       }
       .iframe-vertical {
         width: 100%;
@@ -87,25 +84,6 @@
       #mensaje {
         font-size: 0.95em;
       }
-    }
-    #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-    }
-    main {
-      position: relative;
-      z-index: 1;
-    }
-  
-    #logo-mobile {
-      display: none;
-    }
-
-    @media (max-width: 600px) {
       #logo-mobile {
         display: block;
         margin: 100px auto 0 auto;
@@ -113,48 +91,21 @@
         opacity: 0.6;
       }
     }
-    </style>
+  </style>
 </head>
 <body>
-  <div id="particles-js"></div>
   <main>
     <h1>Tu carta del día</h1>
     <p id="fecha"></p>
-    <button onclick="revelarCarta()">🔮 REVELAR</button>
+    <button id="revelarBtn" onclick="revelarCarta()">🔮 REVELAR</button>
     <div class="card" id="card">
       <h2 id="tituloCarta"></h2>
-      <iframe id="animacion" class="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe id="animacion" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       <p id="mensaje"></p>
     </div>
     <footer>by Apu Walla – Leo Torcello</footer>
     <img src="logo.png" id="logo-mobile" alt="logo" />
   </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
-  <script>
-    tsParticles.load("particles-js", {
-      fullScreen: { enable: true, zIndex: 0 },
-      particles: {
-        number: { value: 60 },
-        color: { value: "#ffffff" },
-        opacity: {
-          value: 0.3,
-          random: true,
-        },
-        size: {
-          value: 2,
-          random: true
-        },
-        move: {
-          enable: true,
-          speed: 0.3,
-          direction: "top",
-          outModes: { default: "out" }
-        }
-      },
-      background: { color: "transparent" }
-    });
-  </script>
 
   <script>
     const arcanosMayores = [
@@ -163,16 +114,15 @@
       "La Templanza", "El Diablo", "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
     ];
 
+    function esMobile() {
+      return window.matchMedia("(max-width: 600px)").matches;
+    }
+
     async function getCartaRandom() {
       const res = await fetch('data.json');
       const data = await res.json();
       const randomIndex = Math.floor(Math.random() * data.length);
       return data[randomIndex];
-    }
-
-    
-    function esMobile() {
-      return window.matchMedia("(max-width: 600px)").matches;
     }
 
     function revelarCarta() {
@@ -211,12 +161,6 @@
       iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
       iframe.classList.remove("iframe-vertical", "iframe-horizontal");
 
-      const arcanosMayores = [
-        "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador", "El Hierofante", "Los Enamorados",
-        "El Carro", "La Fuerza", "El Ermitaño", "La Rueda de la Fortuna", "La Justicia", "El Colgado", "La Muerte",
-        "La Templanza", "El Diablo", "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
-      ];
-
       if (arcanosMayores.includes(carta.Carta)) {
         iframe.classList.add("iframe-horizontal");
       } else {
@@ -227,31 +171,6 @@
       }
 
       document.getElementById("card").style.display = "block";
-    }
-
-      document.querySelector("button").style.display = "none";
-      document.querySelector("h1").style.display = "none";
-      document.getElementById("fecha").style.display = "none";
-
-      getCartaRandom().then(carta => {
-        document.getElementById("tituloCarta").innerText = carta.Carta;
-        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
-        const iframe = document.getElementById("animacion");
-        const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
-        iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
-        iframe.classList.remove("iframe-vertical", "iframe-horizontal");
-
-        if (arcanosMayores.includes(carta.Carta)) {
-          iframe.classList.add("iframe-horizontal");
-        } else {
-          iframe.classList.add("iframe-vertical");
-          setTimeout(() => {
-            window.scrollBy({ top: 100, behavior: 'smooth' });
-          }, 1800);
-        }
-
-        document.getElementById("card").style.display = "block";
-      });
     }
 
     window.onload = function () {
