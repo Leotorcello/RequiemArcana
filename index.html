@@ -147,6 +147,37 @@
   </style>
 </head>
 <body>
+
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("particles-js", {
+      fullScreen: { enable: true, zIndex: 0 },
+      particles: {
+        number: { value: 40 },
+        color: { value: "#ffffff" },
+        opacity: {
+          value: 0.15,
+          random: true,
+        },
+        size: {
+          value: 1.5,
+          random: true
+        },
+        move: {
+          enable: true,
+          speed: 0.4,
+          direction: "top",
+          outModes: { default: "out" }
+        }
+      },
+      interactivity: {
+        events: { onhover: { enable: false }, onclick: { enable: false } }
+      },
+      background: { color: "transparent" }
+    });
+  </script>
+
   <h1>Tu carta del día</h1>
   <p id="fecha"></p>
   <button onclick="revelarCarta()">🔮 REVELAR</button>
@@ -195,6 +226,12 @@
           iframe.classList.add("iframe-vertical");
         }
         document.getElementById("card").style.display = "block";
+        if (!arcanosMayores.includes(carta.Carta)) {
+          setTimeout(() => {
+            window.scrollBy({ top: 100, behavior: 'smooth' });
+          }, 1800);
+        }
+
         iframe.classList.add("magico");
       });
     }
