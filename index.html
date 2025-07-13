@@ -94,7 +94,21 @@
         font-size: 0.95em;
       }
     }
-  </style>
+  
+    #logo-container {
+      margin-top: 10px;
+    }
+    #logo {
+      max-width: 150px;
+      height: auto;
+      opacity: 0.7;
+    }
+    @media (max-width: 600px) {
+      #logo {
+        max-width: 120px;
+      }
+    }
+    </style>
 </head>
 <body>
   <h1>Tu carta del día</h1>
@@ -106,6 +120,9 @@
     <p id="mensaje"></p>
   </div>
   <footer>by Apu Walla – Leo Torcello</footer>
+  <div id="logo-container">
+    <img src="logo.png" alt="Logo Apu" id="logo" />
+  </div>
 
   <script>
     const arcanosMayores = [
