@@ -29,12 +29,10 @@
       animation: fadeIn 2s ease-in-out forwards;
     }
     iframe {
-      width: 300px;
-      height: 500px;
-      max-width: 90vw;
       border-radius: 20px;
       border: none;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      max-width: 90vw;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -72,6 +70,12 @@
   <footer>Apu Walla - Leo Torcello</footer>
 
   <script>
+    const arcanosMayores = [
+      "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador", "El Hierofante", "Los Enamorados",
+      "El Carro", "La Fuerza", "El Ermitaño", "La Rueda de la Fortuna", "La Justicia", "El Colgado", "La Muerte",
+      "La Templanza", "El Diablo", "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
+    ];
+
     async function getCartaRandom() {
       const res = await fetch('data.json');
       const data = await res.json();
@@ -87,6 +91,16 @@
         const iframe = document.getElementById("animacion");
         const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
         iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
+
+        // Ajuste de tamaño
+        if (arcanosMayores.includes(carta.Carta)) {
+          iframe.width = "560";
+          iframe.height = "315"; // 16:9
+        } else {
+          iframe.width = "300";
+          iframe.height = "500"; // vertical
+        }
+
         document.getElementById("card").style.display = "block";
       });
     }
