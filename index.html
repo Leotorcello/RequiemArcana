@@ -170,7 +170,65 @@
       return data[randomIndex];
     }
 
+    
+    function esMobile() {
+      return window.matchMedia("(max-width: 600px)").matches;
+    }
+
     function revelarCarta() {
+      const hoy = new Date().toLocaleDateString("es-AR");
+      const yaMostrada = localStorage.getItem("cartaMostradaFecha");
+
+      if (yaMostrada === hoy) {
+        const dataGuardada = localStorage.getItem("cartaMostradaData");
+
+        if (esMobile() && dataGuardada) {
+          const carta = JSON.parse(dataGuardada);
+          mostrarCarta(carta);
+          return;
+        } else if (!esMobile()) {
+          alert("Ya recibiste tu carta del día. Volvé mañana 🌞");
+          return;
+        }
+      }
+
+      getCartaRandom().then(carta => {
+        localStorage.setItem("cartaMostradaFecha", hoy);
+        localStorage.setItem("cartaMostradaData", JSON.stringify(carta));
+        mostrarCarta(carta);
+      });
+    }
+
+    function mostrarCarta(carta) {
+      document.getElementById("revelarBtn").style.display = "none";
+      document.querySelector("h1").style.display = "none";
+      document.getElementById("fecha").style.display = "none";
+
+      document.getElementById("tituloCarta").innerText = carta.Carta;
+      document.getElementById("mensaje").innerText = carta["Mensaje del día"];
+      const iframe = document.getElementById("animacion");
+      const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
+      iframe.classList.remove("iframe-vertical", "iframe-horizontal");
+
+      const arcanosMayores = [
+        "El Loco", "El Mago", "La Sacerdotisa", "La Emperatriz", "El Emperador", "El Hierofante", "Los Enamorados",
+        "El Carro", "La Fuerza", "El Ermitaño", "La Rueda de la Fortuna", "La Justicia", "El Colgado", "La Muerte",
+        "La Templanza", "El Diablo", "La Torre", "La Estrella", "La Luna", "El Sol", "El Juicio", "El Mundo"
+      ];
+
+      if (arcanosMayores.includes(carta.Carta)) {
+        iframe.classList.add("iframe-horizontal");
+      } else {
+        iframe.classList.add("iframe-vertical");
+        setTimeout(() => {
+          window.scrollBy({ top: 100, behavior: 'smooth' });
+        }, 1800);
+      }
+
+      document.getElementById("card").style.display = "block";
+    }
+
       document.querySelector("button").style.display = "none";
       document.querySelector("h1").style.display = "none";
       document.getElementById("fecha").style.display = "none";
