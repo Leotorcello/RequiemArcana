@@ -31,6 +31,10 @@
       animation: fadeIn 2s ease-in-out forwards;
     }
     iframe {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 1.5s ease, transform 1.5s ease;
+
       border-radius: 20px;
       border: none;
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
@@ -138,6 +142,8 @@
           iframe.classList.add("iframe-vertical");
         }
         document.getElementById("card").style.display = "block";
+        iframe.style.opacity = "1";
+        iframe.style.transform = "scale(1)";
       });
     }
 
