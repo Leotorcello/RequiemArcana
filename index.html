@@ -1,100 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Carta del Día</title>
-  <style>
-    body {
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 40px 20px 80px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      min-height: 100vh;
-    }
-    h1 {
-      margin-top: auto;
-      font-size: 2.5em;
-    }
-    #fecha {
-      margin-bottom: 30px;
-    }
-    .card {
-      display: none;
-      animation: fadeIn 2s ease-in-out forwards;
-    }
-    iframe {
-      width: 300px;
-      height: 500px;
-      max-width: 90vw;
-      border-radius: 20px;
-      border: none;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    button {
-      padding: 15px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      background: #444;
-      color: white;
-      cursor: pointer;
-      margin-bottom: 30px;
-    }
-    button:hover {
-      background: #666;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Interactivo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #6a1b9a;
+            margin-bottom: 30px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .tarot-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .tarot-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .tarot-card h2 {
+            color: #7b1fa2;
+            margin-top: 0;
+            border-bottom: 2px solid #e1bee7;
+            padding-bottom: 10px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        .message {
+            font-style: italic;
+            line-height: 1.6;
+            background-color: #f3e5f5;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Carta del Día</h1>
-  <p id="fecha"></p>
-  <button onclick="revelarCarta()">🔮 REVELAR</button>
-  <div class="card" id="card">
-    <h2 id="tituloCarta"></h2>
-    <iframe id="animacion" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <p id="mensaje" style="max-width:700px;margin:30px auto;"></p>
-  </div>
-  <footer>Apu Walla - Leo Torcello</footer>
+    <div class="container">
+        <h1>✨ Mensajes del Tarot ✨</h1>
+        <div id="tarot-container" class="card-grid"></div>
+    </div>
 
-  <script>
-    async function getCartaRandom() {
-      const res = await fetch('data.json');
-      const data = await res.json();
-      const randomIndex = Math.floor(Math.random() * data.length);
-      return data[randomIndex];
-    }
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error al cargar el archivo JSON');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const container = document.getElementById('tarot-container');
+                    
+                    if (!data || !Array.isArray(data)) {
+                        throw new Error('El formato del JSON es incorrecto');
+                    }
 
-    function revelarCarta() {
-      document.querySelector("button").style.display = "none";
-      getCartaRandom().then(carta => {
-        document.getElementById("tituloCarta").innerText = carta.Carta;
-        document.getElementById("mensaje").innerText = carta["Mensaje del día"];
-        const iframe = document.getElementById("animacion");
-        iframe.src = carta.Animation_URL;
-        document.getElementById("card").style.display = "block";
-      });
-    }
+                    data.forEach(card => {
+                        if (!card.Carta || !card['Mensaje del día'] || !card.Animation_URL) {
+                            console.warn('Carta con formato incorrecto:', card);
+                            return;
+                        }
 
-    window.onload = function () {
-      const fecha = new Date();
-      document.getElementById("fecha").innerText = "Tu carta para hoy, " +
-        fecha.toLocaleDateString("es-AR", { weekday:'long', year: 'numeric', month: 'long', day: 'numeric' });
-    };
-  </script>
+                        const cardElement = document.createElement('div');
+                        cardElement.className = 'tarot-card';
+                        
+                        cardElement.innerHTML = `
+                            <h2>${card.Carta}</h2>
+                            <div class="video-container">
+                                <iframe 
+                                    src="${card.Animation_URL}" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                            <div class="message">
+                                <p>${card['Mensaje del día']}</p>
+                            </div>
+                        `;
+                        
+                        container.appendChild(cardElement);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    const container = document.getElementById('tarot-container');
+                    container.innerHTML = `
+                        <div class="error">
+                            <p>Ocurrió un error al cargar las cartas. Por favor intenta más tarde.</p>
+                            <p>${error.message}</p>
+                        </div>
+                    `;
+                });
+        });
+    </script>
 </body>
 </html>
