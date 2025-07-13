@@ -8,6 +8,7 @@
   <style>
     body {
       background: url('background.jpg') no-repeat center center fixed;
+      background-color: #000;
       background-size: cover;
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
@@ -154,25 +155,22 @@
     tsParticles.load("particles-js", {
       fullScreen: { enable: true, zIndex: 0 },
       particles: {
-        number: { value: 40 },
+        number: { value: 80 },
         color: { value: "#ffffff" },
         opacity: {
-          value: 0.15,
+          value: 0.25,
           random: true,
         },
         size: {
-          value: 1.5,
+          value: 2,
           random: true
         },
         move: {
           enable: true,
-          speed: 0.4,
+          speed: 0.3,
           direction: "top",
           outModes: { default: "out" }
         }
-      },
-      interactivity: {
-        events: { onhover: { enable: false }, onclick: { enable: false } }
       },
       background: { color: "transparent" }
     });
@@ -231,7 +229,6 @@
             window.scrollBy({ top: 100, behavior: 'smooth' });
           }, 1800);
         }
-
         iframe.classList.add("magico");
       });
     }
