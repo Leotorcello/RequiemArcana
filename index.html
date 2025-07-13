@@ -14,9 +14,6 @@
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
       padding: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
       min-height: 100vh;
     }
     h1 {
@@ -29,7 +26,6 @@
     }
     .card {
       display: none;
-      animation: fadeIn 2s ease-in-out forwards;
     }
     iframe {
       border-radius: 20px;
@@ -37,47 +33,6 @@
       box-shadow: 0 0 20px rgba(255,255,255,0.2);
       max-width: 100%;
       margin: 0 auto;
-    }
-    .magico {
-      opacity: 0;
-      transform: translateY(-100px) scale(0.7) rotate(-3deg);
-      animation: aparecerRebotando 2s ease-out forwards;
-      filter: drop-shadow(0 0 15px rgba(255,255,255,0.6));
-      position: relative;
-      z-index: 2;
-    }
-    .humo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 200px;
-      height: 200px;
-      margin-left: -100px;
-      margin-top: -100px;
-      background: radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%, transparent 70%);
-      border-radius: 50%;
-      animation: flotarHumo 6s infinite ease-in-out;
-      filter: blur(20px);
-      z-index: 1;
-    }
-    @keyframes aparecerRebotando {
-      0% {
-        opacity: 0;
-        transform: translateY(-100px) scale(0.7) rotate(-3deg);
-      }
-      50% {
-        opacity: 1;
-        transform: translateY(10px) scale(1.05) rotate(1deg);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0) scale(1) rotate(0);
-      }
-    }
-    @keyframes flotarHumo {
-      0% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
-      50% { transform: translate(-50%, -60%) scale(1.1); opacity: 0.4; }
-      100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
     }
     .iframe-vertical {
       width: 300px;
@@ -92,18 +47,25 @@
       margin: 30px auto;
       padding: 0 10px;
     }
+    button {
+      padding: 14px 32px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #666;
+    }
     footer {
       margin-top: 30px;
       font-size: 0.9em;
       color: #aaa;
     }
-    #logo-mobile {
-      display: none;
-    }
-    .flecha {
-      display: none;
-    }
-
     @media (max-width: 600px) {
       body {
         background: url('background2.jpg') no-repeat center center fixed;
@@ -125,40 +87,44 @@
       #mensaje {
         font-size: 0.95em;
       }
-      #logo-mobile {
-        display: block;
-        margin: 100px auto 0 auto;
-        max-width: 320px;
-        opacity: 0.6;
-      }
-      .flecha {
-        display: block;
-        font-size: 24px;
-        color: white;
-        opacity: 0.5;
-        animation: pulse 2s infinite;
-        margin-top: 10px;
-      }
     }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 0.2; transform: translateY(0); }
-      50% { opacity: 0.7; transform: translateY(6px); }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    main {
+      position: relative;
+      z-index: 1;
     }
   </style>
 </head>
 <body>
-
   <div id="particles-js"></div>
+  <main>
+    <h1>Tu carta del día</h1>
+    <p id="fecha"></p>
+    <button onclick="revelarCarta()">🔮 REVELAR</button>
+    <div class="card" id="card">
+      <h2 id="tituloCarta"></h2>
+      <iframe id="animacion" class="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p id="mensaje"></p>
+    </div>
+    <footer>by Apu Walla – Leo Torcello</footer>
+  </main>
+
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
   <script>
     tsParticles.load("particles-js", {
       fullScreen: { enable: true, zIndex: 0 },
       particles: {
-        number: { value: 80 },
+        number: { value: 60 },
         color: { value: "#ffffff" },
         opacity: {
-          value: 0.25,
+          value: 0.3,
           random: true,
         },
         size: {
@@ -175,21 +141,6 @@
       background: { color: "transparent" }
     });
   </script>
-
-  <h1>Tu carta del día</h1>
-  <p id="fecha"></p>
-  <button onclick="revelarCarta()">🔮 REVELAR</button>
-  <div class="card" id="card">
-    <h2 id="tituloCarta"></h2>
-    <div id="humo-container">
-      <div class="humo"></div>
-      <iframe id="animacion" class="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div id="flecha-scroll" class="flecha">&#8595;</div>
-    <p id="mensaje"></p>
-  </div>
-  <footer>by Apu Walla – Leo Torcello</footer>
-  <img src="logo.png" id="logo-mobile" alt="logo" />
 
   <script>
     const arcanosMayores = [
@@ -209,8 +160,7 @@
       document.querySelector("button").style.display = "none";
       document.querySelector("h1").style.display = "none";
       document.getElementById("fecha").style.display = "none";
-      document.getElementById("logo-mobile").style.display = "none";
-      document.getElementById("flecha-scroll").style.display = "none";
+
       getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
         document.getElementById("mensaje").innerText = carta["Mensaje del día"];
@@ -218,18 +168,17 @@
         const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
         iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
         iframe.classList.remove("iframe-vertical", "iframe-horizontal");
+
         if (arcanosMayores.includes(carta.Carta)) {
           iframe.classList.add("iframe-horizontal");
         } else {
           iframe.classList.add("iframe-vertical");
-        }
-        document.getElementById("card").style.display = "block";
-        if (!arcanosMayores.includes(carta.Carta)) {
           setTimeout(() => {
             window.scrollBy({ top: 100, behavior: 'smooth' });
           }, 1800);
         }
-        iframe.classList.add("magico");
+
+        document.getElementById("card").style.display = "block";
       });
     }
 
