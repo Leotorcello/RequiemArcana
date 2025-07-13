@@ -37,22 +37,54 @@
       max-width: 100%;
       margin: 0 auto;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .magico {
+      opacity: 0;
+      transform: translateY(-100px) scale(0.7) rotate(-3deg);
+      animation: aparecerRebotando 2s ease-out forwards;
+      filter: drop-shadow(0 0 15px rgba(255,255,255,0.6));
+      position: relative;
+      z-index: 2;
     }
-    button {
-      padding: 15px 30px;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      background: #444;
-      color: white;
-      cursor: pointer;
-      margin-bottom: 30px;
+    .humo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      margin-left: -100px;
+      margin-top: -100px;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: flotarHumo 6s infinite ease-in-out;
+      filter: blur(20px);
+      z-index: 1;
     }
-    button:hover {
-      background: #666;
+    @keyframes aparecerRebotando {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.7) rotate(-3deg);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(10px) scale(1.05) rotate(1deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0);
+      }
+    }
+    @keyframes flotarHumo {
+      0% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+      50% { transform: translate(-50%, -60%) scale(1.1); opacity: 0.4; }
+      100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
+    }
+    .iframe-vertical {
+      width: 300px;
+      height: 500px;
+    }
+    .iframe-horizontal {
+      width: 560px;
+      height: 315px;
     }
     #mensaje {
       max-width: 700px;
@@ -64,14 +96,13 @@
       font-size: 0.9em;
       color: #aaa;
     }
-    .iframe-vertical {
-      width: 300px;
-      height: 500px;
+    #logo-mobile {
+      display: none;
     }
-    .iframe-horizontal {
-      width: 560px;
-      height: 315px;
+    .flecha {
+      display: none;
     }
+
     @media (max-width: 600px) {
       body {
         background: url('background2.jpg') no-repeat center center fixed;
@@ -93,77 +124,27 @@
       #mensaje {
         font-size: 0.95em;
       }
-    }
-  
-    .magico {
-      opacity: 0;
-      transform: translateY(-100px) scale(0.7) rotate(-3deg);
-      animation: aparecerRebotando 2s ease-out forwards;
-      filter: drop-shadow(0 0 15px rgba(255,255,255,0.6));
-      position: relative;
-      z-index: 2;
-    }
-
-    .humo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 200px;
-      height: 200px;
-      margin-left: -100px;
-      margin-top: -100px;
-      background: radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%, transparent 70%);
-      border-radius: 50%;
-      animation: flotarHumo 6s infinite ease-in-out;
-      filter: blur(20px);
-      z-index: 1;
-    }
-
-    @keyframes aparecerRebotando {
-      0% {
-        opacity: 0;
-        transform: translateY(-100px) scale(0.7) rotate(-3deg);
-      }
-      50% {
-        opacity: 1;
-        transform: translateY(10px) scale(1.05) rotate(1deg);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0) scale(1) rotate(0);
-      }
-    }
-
-    @keyframes flotarHumo {
-      0% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
-      50% { transform: translate(-50%, -60%) scale(1.1); opacity: 0.4; }
-      100% { transform: translate(-50%, -50%) scale(1); opacity: 0.2; }
-    }
-
-    #humo-container {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    #logo-mobile {
-      position: relative;
-      margin-top: 100px;
-      display: none;
-    }
-
-    @media (max-width: 600px) {
       #logo-mobile {
-      position: relative;
-      margin-top: 100px;
         display: block;
-        margin: 20px auto 0 auto;
+        margin: 100px auto 0 auto;
         max-width: 320px;
         opacity: 0.6;
       }
+      .flecha {
+        display: block;
+        font-size: 24px;
+        color: white;
+        opacity: 0.5;
+        animation: pulse 2s infinite;
+        margin-top: 10px;
+      }
     }
-    </style>
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; transform: translateY(0); }
+      50% { opacity: 0.7; transform: translateY(6px); }
+    }
+  </style>
 </head>
 <body>
   <h1>Tu carta del día</h1>
@@ -171,16 +152,15 @@
   <button onclick="revelarCarta()">🔮 REVELAR</button>
   <div class="card" id="card">
     <h2 id="tituloCarta"></h2>
-    
     <div id="humo-container">
       <div class="humo"></div>
       <iframe id="animacion" class="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
+    <div id="flecha-scroll" class="flecha">&#8595;</div>
     <p id="mensaje"></p>
   </div>
   <footer>by Apu Walla – Leo Torcello</footer>
   <img src="logo.png" id="logo-mobile" alt="logo" />
-
 
   <script>
     const arcanosMayores = [
@@ -199,8 +179,9 @@
     function revelarCarta() {
       document.querySelector("button").style.display = "none";
       document.querySelector("h1").style.display = "none";
-      document.getElementById("logo-mobile").style.display = "none";
       document.getElementById("fecha").style.display = "none";
+      document.getElementById("logo-mobile").style.display = "none";
+      document.getElementById("flecha-scroll").style.display = "none";
       getCartaRandom().then(carta => {
         document.getElementById("tituloCarta").innerText = carta.Carta;
         document.getElementById("mensaje").innerText = carta["Mensaje del día"];
