@@ -64,15 +64,28 @@
       font-size: 0.9em;
       color: #aaa;
     }
+    .iframe-vertical {
+      width: 300px;
+      height: 500px;
+    }
+    .iframe-horizontal {
+      width: 560px;
+      height: 315px;
+    }
 
     @media (max-width: 600px) {
       h1 {
         font-size: 1.8em;
       }
-      iframe {
-        width: 100% !important;
-        height: auto !important;
+      .iframe-vertical {
+        width: 100%;
         aspect-ratio: 9/16;
+        height: auto;
+      }
+      .iframe-horizontal {
+        width: 100%;
+        aspect-ratio: 16/9;
+        height: auto;
       }
       #mensaje {
         font-size: 0.95em;
@@ -114,17 +127,14 @@
         const id = carta.Animation_URL.split("/embed/")[1].split("?")[0];
         iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&mute=1&loop=1&enablejsapi=1&playlist=${id}&controls=0&modestbranding=1&rel=0`;
 
-        if (window.innerWidth > 600) {
-          if (arcanosMayores.includes(carta.Carta)) {
-            iframe.width = "560";
-            iframe.height = "315"; // horizontal
-          } else {
-            iframe.width = "300";
-            iframe.height = "500"; // vertical
-          }
+        // Quitar clases previas
+        iframe.classList.remove("iframe-vertical", "iframe-horizontal");
+
+        // Añadir la clase correcta según tipo
+        if (arcanosMayores.includes(carta.Carta)) {
+          iframe.classList.add("iframe-horizontal");
         } else {
-          iframe.removeAttribute("width");
-          iframe.removeAttribute("height");
+          iframe.classList.add("iframe-vertical");
         }
 
         document.getElementById("card").style.display = "block";
