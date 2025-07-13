@@ -97,13 +97,22 @@
   
     .magico {
       opacity: 0;
-      transform: scale(0.8);
-      animation: aparecerMagia 1.5s ease forwards;
+      transform: translateY(-100px) scale(0.7) rotate(-3deg);
+      animation: aparecerRebotando 2s ease-out forwards;
+      filter: drop-shadow(0 0 15px rgba(255,255,255,0.6));
     }
-    @keyframes aparecerMagia {
-      to {
+    @keyframes aparecerRebotando {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px) scale(0.7) rotate(-3deg);
+      }
+      50% {
         opacity: 1;
-        transform: scale(1);
+        transform: translateY(10px) scale(1.05) rotate(1deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0);
       }
     }
     </style>
